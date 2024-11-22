@@ -17,8 +17,8 @@ $gray-900:                  #252735;
 $black:                     #0C0F1E;
 
 // Color variables
-$primary:                   #FF0027;
-$secondary:                 $black;
+$primary:                   #DB1869;
+$secondary:                 #04946D;
 $success:                   #3AA65E;
 $warning:                   #FA9F19;
 $info:                      #546EF0;
@@ -291,7 +291,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 // Inputs
 /***************************************/
 // Controls input
-$input-padding-y:                       0.75rem; 
+$input-padding-y:                       0.75rem;
 $input-padding-x:                       1rem;
 $input-font-size:                       $input-btn-font-size;
 $input-font-weight:                     $font-weight-base;
