@@ -47,3 +47,5 @@ node_modules
 
 # Other ketobalance specific files and directories
 phpcs.xml
+
+package-lock.json
