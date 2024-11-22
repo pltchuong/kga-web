@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="language" content="EN" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Orica is a creative, clean, modern and beautifully designed minimalist HTML/CSS Bootstrap 5 template" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/production/favicon.svg" />
+  <link rel="icon" href="img/production/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/production/favicon.svg" type="image/svg+xml" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="css/lib/bootstrap-icons.css" />
+  <!-- LIBS -->
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+  <!-- Video Player -->
+  <link rel="stylesheet" href="css/lib/plyr.css" />
+  <!-- Main CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Blog Post</title>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div id="preloader">
+    <div class="circles-animation">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+  <header id="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- LOGO -->
+          <a href="index.html">
+            <img src="img/production/logo.png" width="80" alt="logo" />
+          </a>
+          <!-- /LOGO -->
+        </div><!-- /.offcanvas-brand -->
+        <div class="navbar-collapse offcanvas-collapse" id="main-navigation">
+          <div class="offcanvas-header mb-2 d-lg-none d-xl-none d-xxl-none">
+            <a href="index.html">
+              <img src="img/production/logo.png" srcset="img/production/logo.png 2x" width="100" height="36" alt="logo">
+            </a>
+            <button type="button" class="btn-close offcanvas-close" aria-label="Close"></button>
+          </div><!-- /.offcanvas-header -->
+          <!-- MENU LIST -->
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="contact-us.html">Contact us</a></li>
+                <li><a class="dropdown-item" href="contact-us-2.html">Contact us 2</a></li>
+                <li><a class="dropdown-item" href="contact-us-3.html">Contact us 3</a></li>
+                <li><a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a></li>
+                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                <li><a class="dropdown-item" href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                <li><a class="dropdown-item" href="services.html">Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Portfolio </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio-2.html">Portfolio 2</a></li>
+                <li><a class="dropdown-item" href="portfolio-3.html">Portfolio 3</a></li>
+                <li><a class="dropdown-item" href="project-details.html">Project Details</a></li>
+                <li><a class="dropdown-item" href="project-details-2.html">Project Details 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                <li><a class="dropdown-item" href="blog.html">Blog Left Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog-details.html">Blog details</a></li>
+                <li><a class="dropdown-item" href="blog-details-no-sidebar.html">Blog details no sidebar</a></li>
+              </ul>
+            </li>
+          </ul><!-- /.navbar-nav -->
+          <!-- /MENU LIST -->
+        </div><!-- /.navbar-collapse -->
+        <!-- EXTARS -->
+        <div class="navbar-extra ms-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mb-0">
+              <a href="contact-us.html" class="btn btn-nav-accent ms-lg-7">
+                <span class="btn-label">Contact us</span>
+              </a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-extra -->
+        <!-- /EXTARS -->
+        <!-- HAMBURGER BTN -->
+        <button class="navbar-hamburger ms-4 d-lg-none d-xl-none d-xxl-none" type="button" data-offcanvas-toggle="offcanvas" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+        <!-- /HAMBURGER BTN -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+  </header><!-- /#site-header -->
+  <section class="pt-lg-8 pt-4" data-scroll-section='true'>
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="section-title h2">Blog Post No Sidebar</h2>
+        <div class="row row-cols-lg-2">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-desc-primary">
+                  <p class="mb-0"> Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit amet. Everything is easy with us. </p>
+                </div>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.col -->
+          <div class="col-lg-3 offset-lg-3">
+            <form class="search-form form-mui mt-4 mt-lg-0">
+              <div class="form-floating">
+                <input type="text" id="search" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-more text-uppercase">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.0004 19L14.6504 14.65" stroke="" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <label for="search">Search</label>
+              </div>
+            </form>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div>
+      <!-- /.section-heading -->
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.section-->
+  <section class="section pt-0 pb-lg-15 pb-5" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <div class="row">
+            <div class="col-12">
+              <hr class="mt-0 mb-4 mb-md-5 mb-lg-8" />
+            </div>
+            <!-- /.col-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="blog blog-details single">
+            <article class="post">
+              <div class="post-content mb-5">
+                <div class="post-meta mb-2">
+                  <ul class="list-unstyled categories-list mb-0">
+                    <li><a href="#">Typography</a></li>
+                    <li><a href="#">Color</a></li>
+                  </ul>
+                </div>
+                <h1 class="h3 text-uppercase">How to increase productivity of your product design team</h1>
+                <div class="post-meta mb-3 mb-lg-4">
+                  <span class="date">5 Jul 2022</span>
+                </div>
+                <p>Cras aliquam a leo vitae dignissim. In lobortis pulvinar scelerisque. Suspendisse eu massa ac neque rhoncus commodo facilisis et leo. Duis accumsan maximus dui vel iaculis. Ut feugiat sollicitudin felis eu vulputate. Mauris consequat sodales ante, volutpat pretium augue tincidunt ut. Maecenas fringilla ante luctus metus pretium, eget eleifend sapien sodales.</p>
+                <div class="hover-zoomout">
+                  <figure class="my-3 my-lg-4">
+                    <img src="./img/production/blog/post-details-1.jpg" srcset="./img/production/blog/post-details-1@2x.jpg 2x" alt="Blog details">
+                  </figure>
+                </div>
+                <p>Phasellus tempor fringilla elementum. Cras pretium accumsan eros, sit amet maximus turpis aliquam at. Sed a tincidunt ligula, vel tempor ante. Nunc egestas orci quis ornare egestas. Nullam velit metus, accumsan tempus elit ac, dictum pellentesque neque. Integer lorem tortor, tincidunt vel orci ac, pulvinar faucibus sem. Integer efficitur orci ac fermentum ornare. </p>
+                <blockquote class="mx-3 mx-lg-7">
+                  <p>Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula lacinia odio sem nec elit purus.</p>
+                  <footer class="blockquote-footer">Very important person</footer>
+                </blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum elementum gravida. Ut in arcu ac libero commodo imperdiet. Phasellus cursus ex non elit auctor pretium. In fringilla augue lectus. Etiam non lorem ultrices, pharetra risus non, interdum sem. Quisque justo ante, rutrum pellentesque tellus non, viverra efficitur ex.</p>
+              </div>
+              <footer class="post-footer d-md-flex flex-md-row justify-content-md-between align-items-center mt-3 mt-lg-4">
+                <div class="post-meta mb-0">
+                  <ul class="list-unstyled tag-list mb-0">
+                    <li><a href="#"># Design</a></li>
+                    <li><a href="#"># Color</a></li>
+                    <li><a href="#"># Productivity</a></li>
+                  </ul>
+                </div>
+                <div class="mb-0">
+                  <div class="dropdown share-dropdown btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="bi bi-share"></i> Share </button>
+                    <div class="dropdown-menu" style="">
+                      <a class="dropdown-item" href="#"><i class="uil uil-twitter"></i>Twitter</a>
+                      <a class="dropdown-item" href="#"><i class="uil uil-facebook-f"></i>Facebook</a>
+                      <a class="dropdown-item" href="#"><i class="uil uil-linkedin"></i>Linkedin</a>
+                    </div>
+                    <!--/.dropdown-menu -->
+                  </div>
+                  <!--/.share-dropdown -->
+                </div>
+              </footer>
+            </article>
+            <!-- /.post -->
+            <div class="author-info my-8 mt-lg-8 mb-lg-15">
+              <div class="author-info-header mb-1 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <div class="user-avatar">
+                    <a href="#">
+                      <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-1.jpg">
+                    </a>
+                  </div>
+                  <!-- /.user-avatar -->
+                  <div class="author-info-details">
+                    <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                    <span class="fs-16">UX Designer</span>
+                  </div>
+                  <!-- /.author-info-details -->
+                </div>
+              </div>
+              <!-- /.author-info-header -->
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum elementum gravida. Ut in arcu ac libero commodo imperdiet. </p>
+              <ul class="list-unstyled social-icons team-member-icons mb-0">
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" class="rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" class="rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" class="rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!--/.social -->
+            </div>
+            <!--/.author-info -->
+            <div class="recommended-posts orica-carousel mb-5 mb-lg-15">
+              <h3 class="mb-4 mb-lg-8 text-uppercase">You Might Also Like</h3>
+              <div class="swiper swiper-container recommended-posts-container py-3 py-lg-4" data-swiper='{"breakpoints":{"0": {"slidesPerView": 1,"spaceBetween": 0}, "768": {"slidesPerView": 2,"spaceBetween": 32}, "1400": {"slidesPerView": 2,"spaceBetween": 32}}}'>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <article class="post">
+                      <div class="post-meta">
+                        <ul class="list-unstyled categories-list mb-0">
+                          <li><a href="javascript:void(0)">Typography</a></li>
+                          <li><a href="javascript:void(0)">Color</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.post-meta -->
+                      <div class="post-thumb hover-zoomout">
+                        <a href="javascript:void(0)">
+                          <figure class="mb-3" data-hoverable="true" data-cursor-text="Read more">
+                            <img src="img/production/blog/post-thumb-1.jpg" srcset="img/production/blog/post-thumb-1@2x.jpg 2x" alt="Blog post">
+                          </figure>
+                        </a>
+                      </div>
+                      <!-- /.post-thumb -->
+                      <div class="post-header mt-2">
+                        <h5 class="post-title h5 text-uppercase">
+                          <a class="link-dark" href="javascript:void(0)"> Color theory in graphic design system Color theory </a>
+                        </h5>
+                      </div>
+                      <!-- /.post-header -->
+                    </article>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.swiper-slide -->
+                  <div class="swiper-slide">
+                    <article class="post">
+                      <div class="post-meta">
+                        <ul class="list-unstyled categories-list mb-0">
+                          <li><a href="javascript:void(0)">Typography</a></li>
+                          <li><a href="javascript:void(0)">Color</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.post-meta -->
+                      <div class="post-thumb hover-zoomout">
+                        <a href="javascript:void(0)">
+                          <figure class="mb-3" data-hoverable="true" data-cursor-text="Read more">
+                            <img src="img/production/blog/post-thumb-1.jpg" srcset="img/production/blog/post-thumb-1@2x.jpg 2x" alt="Blog post">
+                          </figure>
+                        </a>
+                      </div>
+                      <!-- /.post-thumb -->
+                      <div class="post-header mt-2">
+                        <h5 class="post-title h5 text-uppercase">
+                          <a class="link-dark" href="javascript:void(0)"> Color theory in graphic design system Color theory </a>
+                        </h5>
+                      </div>
+                      <!-- /.post-header -->
+                    </article>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.swiper-slide -->
+                  <div class="swiper-slide">
+                    <article class="post">
+                      <div class="post-meta">
+                        <ul class="list-unstyled categories-list mb-0">
+                          <li><a href="javascript:void(0)">Typography</a></li>
+                          <li><a href="javascript:void(0)">Color</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.post-meta -->
+                      <div class="post-thumb hover-zoomout">
+                        <a href="javascript:void(0)">
+                          <figure class="mb-3" data-hoverable="true" data-cursor-text="Read more">
+                            <img src="img/production/blog/post-thumb-1.jpg" srcset="img/production/blog/post-thumb-1@2x.jpg 2x" alt="Blog post">
+                          </figure>
+                        </a>
+                      </div>
+                      <!-- /.post-thumb -->
+                      <div class="post-header mt-2">
+                        <h5 class="post-title h5 text-uppercase">
+                          <a class="link-dark" href="javascript:void(0)"> Color theory in graphic design system Color theory </a>
+                        </h5>
+                      </div>
+                      <!-- /.post-header -->
+                    </article>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+              </div>
+              <!-- /.swiper -->
+            </div>
+            <!-- /.recommended-posts -->
+            <div class="comments">
+              <h3 class="mb-4 mb-lg-8 text-uppercase">5 Comments</h3>
+              <ol class="commentlist">
+                <li class="comment">
+                  <div class="comment-header mb-1 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <div class="user-avatar">
+                        <a href="#">
+                          <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-2.jpg" srcset="./img/production/team/team-member-2@2x.jpg 2x">
+                        </a>
+                      </div>
+                      <div class="author-info-details">
+                        <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                        <span class="date">21 Jan 2022</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <a href="#" class="btn btn-sm btn-comment-reply text-uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg> Reply </a>
+                    </div>
+                  </div>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                </li>
+                <li class="comment">
+                  <div class="comment-header mb-1 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <div class="user-avatar">
+                        <a href="#">
+                          <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-2.jpg" srcset="./img/production/team/team-member-2@2x.jpg 2x">
+                        </a>
+                      </div>
+                      <div class="author-info-details">
+                        <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                        <span class="date">21 Jan 2022</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <a href="#" class="btn btn-sm btn-comment-reply text-uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg> Reply </a>
+                    </div>
+                  </div>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="comment-header mb-1 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <div class="user-avatar">
+                            <a href="#">
+                              <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-2.jpg" srcset="./img/production/team/team-member-2@2x.jpg 2x">
+                            </a>
+                          </div>
+                          <div class="author-info-details">
+                            <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                            <span class="date">21 Jan 2022</span>
+                          </div>
+                        </div>
+                        <div class="ms-auto">
+                          <a href="#" class="btn btn-sm btn-comment-reply text-uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg> Reply </a>
+                        </div>
+                      </div>
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="comment-header mb-1 d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                              <div class="user-avatar">
+                                <a href="#">
+                                  <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-2.jpg" srcset="./img/production/team/team-member-2@2x.jpg 2x">
+                                </a>
+                              </div>
+                              <div class="author-info-details">
+                                <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                                <span class="date">21 Jan 2022</span>
+                              </div>
+                            </div>
+                            <div class="ms-auto">
+                              <a href="#" class="btn btn-sm btn-comment-reply text-uppercase">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                </svg> Reply </a>
+                            </div>
+                          </div>
+                          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="comment">
+                  <div class="comment-header mb-1 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <div class="user-avatar">
+                        <a href="#">
+                          <img class="avatar fs-24 wrem-10 hrem-10 rounded-circle" alt="" src="./img/production/team/team-member-2.jpg" srcset="./img/production/team/team-member-2@2x.jpg 2x">
+                        </a>
+                      </div>
+                      <div class="author-info-details">
+                        <h5 class="mb-0"><a href="javascript:void(0)">Alexsandr Rich</a></h5>
+                        <span class="date">21 Jan 2022</span>
+                      </div>
+                    </div>
+                    <div class="ms-auto">
+                      <a href="#" class="btn btn-sm btn-comment-reply text-uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg> Reply </a>
+                    </div>
+                  </div>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                </li>
+              </ol>
+            </div>
+            <!-- /.comments -->
+            <div class="comment-form-wrapper pt-5 pt-lg-15">
+              <h3 class="mb-4 mb-lg-8 text-uppercase">Write a comment</h3>
+              <form class="comment-form form-mui" method="post" action="/">
+                <div class="messages"></div>
+                <div class="row gx-4">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required="">
+                      <label for="form_name">First Name <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your first name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe" required="">
+                      <label for="form_lastname">Last Name <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your last name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com" required="">
+                      <label for="form_email">Email <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please provide a valid email address. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_website" type="text" name="website" class="form-control" placeholder="http://example.com">
+                      <label for="form_email">Website</label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please provide a valid website address. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required=""></textarea>
+                      <label for="form_message">Message <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your messsage. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12 text-center">
+                    <button class="btn btn-more text-uppercase mb-2"><span class="btn-label">Send comment</span></button>
+                    <p class="text-muted"><strong class="text-primary">*</strong> These fields are required. </p>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </form>
+            </div>
+          </div>
+          <!-- /.blog.single -->
+        </div>
+        <!-- /.col-lg-8 -->
+      </div>
+    </div>
+  </section>
+  <!-- /.section -->
+  <footer class="site-footer section text-inverse border-top border-2 border-light" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <a href="index.html" class="logo-footer">
+              <img src="img/production/logo2.png" height="48" alt="logo" />
+            </a>
+            <p class="fs-16 mt-4"> Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit </p>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Services</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Website design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Branding </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Website development </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Packaging design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Marketing & strategy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Links</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Home </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> About us </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Services </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Team </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Blog </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-4 col-md-12 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget mb-4">
+            <form class="subscription-form form-mui">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-more text-uppercase"><span class="btn-label">Subscribe</span></button>
+            </form>
+          </div>
+          <div class="footer-widget">
+            <ul class="icon-list mb-0">
+              <li>
+                <span>
+                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>Seattle, WA</span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 3L11 10L1 3" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span><a href="mailto:contact@kgacorp.com">contact@kgacorp.com</a></span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9428 15.9562V18.9562C20.9439 19.2347 20.8869 19.5104 20.7753 19.7656C20.6637 20.0208 20.5001 20.2498 20.2949 20.4381C20.0897 20.6264 19.8474 20.7697 19.5836 20.8589C19.3197 20.9482 19.0402 20.9813 18.7628 20.9562C15.6856 20.6219 12.7298 19.5704 10.1328 17.8862C7.71663 16.3509 5.66814 14.3024 4.1328 11.8862C2.44278 9.27743 1.39105 6.30722 1.0628 3.21623C1.03781 2.9397 1.07068 2.66099 1.1593 2.39785C1.24793 2.13472 1.39038 1.89292 1.57757 1.68785C1.76477 1.48278 1.99261 1.31894 2.2466 1.20675C2.50058 1.09456 2.77514 1.03649 3.0528 1.03623H6.0528C6.53811 1.03145 7.0086 1.20331 7.37657 1.51976C7.74454 1.83622 7.98488 2.27568 8.0528 2.75623C8.17943 3.7163 8.41425 4.65896 8.7528 5.56623C8.88735 5.92415 8.91647 6.31314 8.83671 6.68711C8.75696 7.06108 8.57167 7.40434 8.3028 7.67623L7.0328 8.94623C8.45636 11.4498 10.5293 13.5227 13.0328 14.9462L14.3028 13.6762C14.5747 13.4074 14.918 13.2221 15.2919 13.1423C15.6659 13.0626 16.0549 13.0917 16.4128 13.2262C17.3201 13.5648 18.2627 13.7996 19.2228 13.9262C19.7086 13.9948 20.1522 14.2394 20.4693 14.6137C20.7865 14.988 20.955 15.4658 20.9428 15.9562Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>+1 (206) 739-9690</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+      </div>
+      <!-- /.row-->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="scroll-btn-down">
+    <button class="scroll-btn-container">
+      <span class="scroll-btn-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down scroll-btn-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <!-- /.scroll-btn -->
+  <!-- Uncomment to show Cookie popup -->
+  <span class="site-cursor"></span>
+  <!-- /.site-cursor -->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/lib/imagesloaded.pkgd.min.js"></script>
+  <script src="js/lib/isotope.pkgd.min.js"></script>
+  <script src="js/lib/spotlight.bundle.js"></script>
+  <!-- Waypoints -->
+  <script src="js/lib/noframework.waypoints.min.js"></script>
+  <!-- Plyr Video Player -->
+  <script src="js/lib/plyr.js"></script>
+  <!-- Typer -->
+  <script src="js/lib/typer.js"></script>
+  <!-- Swiper Slider -->
+  <script src="js/lib/swiper-bundle.min.js"></script>
+  <!-- Progress bar -->
+  <script src="js/lib/progressbar.min.js"></script>
+  <!-- Counter Up -->
+  <script src="js/lib/counterup2.min.js"></script>
+  <!-- Theme scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

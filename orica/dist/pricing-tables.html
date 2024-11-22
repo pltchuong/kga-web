@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="language" content="EN" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Orica is a creative, clean, modern and beautifully designed minimalist HTML/CSS Bootstrap 5 template" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/production/favicon.svg" />
+  <link rel="icon" href="img/production/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/production/favicon.svg" type="image/svg+xml" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="css/lib/bootstrap-icons.css" />
+  <!-- LIBS -->
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+  <!-- Video Player -->
+  <link rel="stylesheet" href="css/lib/plyr.css" />
+  <!-- Main CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Pricing Tables</title>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div id="preloader">
+    <div class="circles-animation">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+  <header id="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- LOGO -->
+          <a href="index.html">
+            <img src="img/production/logo.png" width="80" alt="logo" />
+          </a>
+          <!-- /LOGO -->
+        </div><!-- /.offcanvas-brand -->
+        <div class="navbar-collapse offcanvas-collapse" id="main-navigation">
+          <div class="offcanvas-header mb-2 d-lg-none d-xl-none d-xxl-none">
+            <a href="index.html">
+              <img src="img/production/logo.png" srcset="img/production/logo.png 2x" width="100" height="36" alt="logo">
+            </a>
+            <button type="button" class="btn-close offcanvas-close" aria-label="Close"></button>
+          </div><!-- /.offcanvas-header -->
+          <!-- MENU LIST -->
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="contact-us.html">Contact us</a></li>
+                <li><a class="dropdown-item" href="contact-us-2.html">Contact us 2</a></li>
+                <li><a class="dropdown-item" href="contact-us-3.html">Contact us 3</a></li>
+                <li><a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a></li>
+                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                <li><a class="dropdown-item" href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                <li><a class="dropdown-item" href="services.html">Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Portfolio </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio-2.html">Portfolio 2</a></li>
+                <li><a class="dropdown-item" href="portfolio-3.html">Portfolio 3</a></li>
+                <li><a class="dropdown-item" href="project-details.html">Project Details</a></li>
+                <li><a class="dropdown-item" href="project-details-2.html">Project Details 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                <li><a class="dropdown-item" href="blog.html">Blog Left Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog-details.html">Blog details</a></li>
+                <li><a class="dropdown-item" href="blog-details-no-sidebar.html">Blog details no sidebar</a></li>
+              </ul>
+            </li>
+          </ul><!-- /.navbar-nav -->
+          <!-- /MENU LIST -->
+        </div><!-- /.navbar-collapse -->
+        <!-- EXTARS -->
+        <div class="navbar-extra ms-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mb-0">
+              <a href="contact-us.html" class="btn btn-nav-accent ms-lg-7">
+                <span class="btn-label">Contact us</span>
+              </a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-extra -->
+        <!-- /EXTARS -->
+        <!-- HAMBURGER BTN -->
+        <button class="navbar-hamburger ms-4 d-lg-none d-xl-none d-xxl-none" type="button" data-offcanvas-toggle="offcanvas" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+        <!-- /HAMBURGER BTN -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+  </header><!-- /#site-header -->
+  <section class="pt-lg-8 pt-4" data-scroll-section="true">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="section-title h2">Pricing Tables</h2>
+        <div class="row row-cols-lg-2">
+          <div class="col">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-desc-primary">
+                  <p> Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit amet. Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit amet </p>
+                </div>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div>
+      <!-- /.section-heading -->
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.section-->
+  <section class="section pb-lg-15 pb-5 pt-0 border-bottom border-2 border-light" data-scroll-section="true">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <!-- /.col-lg-3 -->
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-12">
+              <hr class="mt-0 mb-4 mb-md-5 mb-lg-8" />
+            </div>
+            <!-- /.col-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-12">
+              <h3 class="h3 text-uppercase mb-3 mb-lg-4">Find the Right Plan</h3>
+            </div>
+          </div>
+          <!-- /.row -->
+          <div class="row mb-8">
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-8">
+                <div class="pricing-body py-4 px-2">
+                  <h4 class="text-uppercase pricing-title mb-3">Free</h4>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">00.00</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-8">
+                <div class="pricing-body py-4 px-2">
+                  <h4 class="text-uppercase pricing-title mb-3">Basic</h4>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">65.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-8">
+                <div class="pricing-body py-4 px-2">
+                  <h4 class="text-uppercase pricing-title mb-3">Enterprise</h4>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">105.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-12">
+              <h3 class="h3 text-uppercase mb-3 mb-lg-4">Find the Right Plan</h3>
+            </div>
+          </div>
+          <!-- /.row -->
+          <div class="row mb-8">
+            <div class="col-md-4">
+              <div class="pricing mb-3 mb-lg-8">
+                <div class="pricing-body py-4 pe-0 pe-lg-4">
+                  <h4 class="text-uppercase pricing-title mb-3">Free</h4>
+                  <div class="pricing-price price-border-bottom mb-3 pb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">00.00</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing mb-3 mb-lg-8">
+                <div class="pricing-body py-4 pe-0 pe-lg-4">
+                  <h4 class="text-uppercase pricing-title mb-3">Basic</h4>
+                  <div class="pricing-price price-border-bottom mb-3 pb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">65.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing mb-3 mb-lg-8">
+                <div class="pricing-body py-4 pe-0 pe-lg-4">
+                  <h4 class="text-uppercase pricing-title mb-3">Enterprise</h4>
+                  <div class="pricing-price price-border-bottom mb-3 pb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">105.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unordered mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-12">
+              <h3 class="h3 text-uppercase mb-3 mb-lg-4">Find the Right Plan</h3>
+            </div>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-0">
+                <div class="pricing-body py-4 px-2">
+                  <div class="pricing-title-wrapper mb-3 d-flex align-items-center">
+                    <span class="circle me-2"></span>
+                    <h4 class="text-uppercase pricing-title m-0">Free</h4>
+                  </div>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">00.00</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unstyled mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more  btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-0">
+                <div class="pricing-body py-4 px-2">
+                  <div class="pricing-title-wrapper active mb-3 d-flex align-items-center">
+                    <span class="circle me-2"></span>
+                    <h4 class="text-uppercase pricing-title m-0">Basic</h4>
+                  </div>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">65.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unstyled mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+            <div class="col-md-4">
+              <div class="pricing has-border-left mb-3 mb-lg-0">
+                <div class="pricing-body py-4 px-2">
+                  <div class="pricing-title-wrapper mb-3 d-flex align-items-center">
+                    <span class="circle me-2"></span>
+                    <h4 class="text-uppercase pricing-title m-0">Enterprise</h4>
+                  </div>
+                  <div class="pricing-price mb-3">
+                    <div class="price d-flex justify-content-start">
+                      <span class="price-currency">$</span>
+                      <span class="price-value">105.99</span>
+                      <span class="price-duration">mo</span>
+                    </div>
+                    <!--/.price -->
+                  </div>
+                  <!--/.pricing-price -->
+                  <ul class="pricing-list list-unstyled mb-5">
+                    <li>Esimate project</li>
+                    <li>Wireframe</li>
+                    <li>UX research</li>
+                    <li>Upload Your Document</li>
+                    <li>Consultation</li>
+                  </ul>
+                  <a class="btn btn-more btn-more-hover-circle text-uppercase mt-4 mt-lg-auto"><span class="btn-label">Get Started</span></a>
+                </div>
+                <!--/.pricing-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/.col-md-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section -->
+  <section class="section" data-scroll-section="true">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 offset-lg-3">
+          <a href="contact-us.html" class="btn btn-accent btn-accent-lg">
+            <span class="btn-label"> Request A Quote <svg width="49" height="16" viewBox="0 0 49 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9H48V7H0V9Z"></path>
+              </svg>
+            </span>
+          </a>
+          <!-- /.btn-accent -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section -->
+  <footer class="site-footer section text-inverse border-top border-2 border-light" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <a href="index.html" class="logo-footer">
+              <img src="img/production/logo2.png" height="48" alt="logo" />
+            </a>
+            <p class="fs-16 mt-4"> Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit </p>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Services</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Website design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Branding </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Website development </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Packaging design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Marketing & strategy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Links</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Home </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> About us </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Services </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Team </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Blog </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-4 col-md-12 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget mb-4">
+            <form class="subscription-form form-mui">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-more text-uppercase"><span class="btn-label">Subscribe</span></button>
+            </form>
+          </div>
+          <div class="footer-widget">
+            <ul class="icon-list mb-0">
+              <li>
+                <span>
+                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>Seattle, WA</span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 3L11 10L1 3" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span><a href="mailto:contact@kgacorp.com">contact@kgacorp.com</a></span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9428 15.9562V18.9562C20.9439 19.2347 20.8869 19.5104 20.7753 19.7656C20.6637 20.0208 20.5001 20.2498 20.2949 20.4381C20.0897 20.6264 19.8474 20.7697 19.5836 20.8589C19.3197 20.9482 19.0402 20.9813 18.7628 20.9562C15.6856 20.6219 12.7298 19.5704 10.1328 17.8862C7.71663 16.3509 5.66814 14.3024 4.1328 11.8862C2.44278 9.27743 1.39105 6.30722 1.0628 3.21623C1.03781 2.9397 1.07068 2.66099 1.1593 2.39785C1.24793 2.13472 1.39038 1.89292 1.57757 1.68785C1.76477 1.48278 1.99261 1.31894 2.2466 1.20675C2.50058 1.09456 2.77514 1.03649 3.0528 1.03623H6.0528C6.53811 1.03145 7.0086 1.20331 7.37657 1.51976C7.74454 1.83622 7.98488 2.27568 8.0528 2.75623C8.17943 3.7163 8.41425 4.65896 8.7528 5.56623C8.88735 5.92415 8.91647 6.31314 8.83671 6.68711C8.75696 7.06108 8.57167 7.40434 8.3028 7.67623L7.0328 8.94623C8.45636 11.4498 10.5293 13.5227 13.0328 14.9462L14.3028 13.6762C14.5747 13.4074 14.918 13.2221 15.2919 13.1423C15.6659 13.0626 16.0549 13.0917 16.4128 13.2262C17.3201 13.5648 18.2627 13.7996 19.2228 13.9262C19.7086 13.9948 20.1522 14.2394 20.4693 14.6137C20.7865 14.988 20.955 15.4658 20.9428 15.9562Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>+1 (206) 739-9690</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+      </div>
+      <!-- /.row-->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="scroll-btn-down">
+    <button class="scroll-btn-container">
+      <span class="scroll-btn-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down scroll-btn-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <!-- /.scroll-btn -->
+  <!-- Uncomment to show Cookie popup -->
+  <span class="site-cursor"></span>
+  <!-- /.site-cursor -->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/lib/imagesloaded.pkgd.min.js"></script>
+  <script src="js/lib/isotope.pkgd.min.js"></script>
+  <script src="js/lib/spotlight.bundle.js"></script>
+  <!-- Waypoints -->
+  <script src="js/lib/noframework.waypoints.min.js"></script>
+  <!-- Plyr Video Player -->
+  <script src="js/lib/plyr.js"></script>
+  <!-- Typer -->
+  <script src="js/lib/typer.js"></script>
+  <!-- Swiper Slider -->
+  <script src="js/lib/swiper-bundle.min.js"></script>
+  <!-- Progress bar -->
+  <script src="js/lib/progressbar.min.js"></script>
+  <!-- Counter Up -->
+  <script src="js/lib/counterup2.min.js"></script>
+  <!-- Theme scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

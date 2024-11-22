@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="language" content="EN" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Orica is a creative, clean, modern and beautifully designed minimalist HTML/CSS Bootstrap 5 template" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/production/favicon.svg" />
+  <link rel="icon" href="img/production/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/production/favicon.svg" type="image/svg+xml" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="css/lib/bootstrap-icons.css" />
+  <!-- LIBS -->
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+  <!-- Video Player -->
+  <link rel="stylesheet" href="css/lib/plyr.css" />
+  <!-- Main CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Components</title>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div id="preloader">
+    <div class="circles-animation">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+  <header id="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- LOGO -->
+          <a href="index.html">
+            <img src="img/production/logo.png" width="80" alt="logo" />
+          </a>
+          <!-- /LOGO -->
+        </div><!-- /.offcanvas-brand -->
+        <div class="navbar-collapse offcanvas-collapse" id="main-navigation">
+          <div class="offcanvas-header mb-2 d-lg-none d-xl-none d-xxl-none">
+            <a href="index.html">
+              <img src="img/production/logo.png" srcset="img/production/logo.png 2x" width="100" height="36" alt="logo">
+            </a>
+            <button type="button" class="btn-close offcanvas-close" aria-label="Close"></button>
+          </div><!-- /.offcanvas-header -->
+          <!-- MENU LIST -->
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="contact-us.html">Contact us</a></li>
+                <li><a class="dropdown-item" href="contact-us-2.html">Contact us 2</a></li>
+                <li><a class="dropdown-item" href="contact-us-3.html">Contact us 3</a></li>
+                <li><a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a></li>
+                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                <li><a class="dropdown-item" href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                <li><a class="dropdown-item" href="services.html">Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Portfolio </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfolio-2.html">Portfolio 2</a></li>
+                <li><a class="dropdown-item" href="portfolio-3.html">Portfolio 3</a></li>
+                <li><a class="dropdown-item" href="project-details.html">Project Details</a></li>
+                <li><a class="dropdown-item" href="project-details-2.html">Project Details 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Blog </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                <li><a class="dropdown-item" href="blog.html">Blog Left Sidebar</a></li>
+                <li><a class="dropdown-item" href="blog-details.html">Blog details</a></li>
+                <li><a class="dropdown-item" href="blog-details-no-sidebar.html">Blog details no sidebar</a></li>
+              </ul>
+            </li>
+          </ul><!-- /.navbar-nav -->
+          <!-- /MENU LIST -->
+        </div><!-- /.navbar-collapse -->
+        <!-- EXTARS -->
+        <div class="navbar-extra ms-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mb-0">
+              <a href="contact-us.html" class="btn btn-nav-accent ms-lg-7">
+                <span class="btn-label">Contact us</span>
+              </a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-extra -->
+        <!-- /EXTARS -->
+        <!-- HAMBURGER BTN -->
+        <button class="navbar-hamburger ms-4 d-lg-none d-xl-none d-xxl-none" type="button" data-offcanvas-toggle="offcanvas" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+        <!-- /HAMBURGER BTN -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+  </header><!-- /#site-header -->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-12 sidebar sticky-sidebar mt-md-0 d-none d-xl-block">
+          <div class="widget">
+            <h5 class="widget-title">Elements</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#accordion">Accordion</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#avatars">Avatars</a></li>
+                <li><a href="#blockquote">Blockquote</a></li>
+                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="#carousel">Carousel</a></li>
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#lightbox">Lightbox</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#modal">Modal</a></li>
+                <li><a href="#progressbar">Progressbar</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#typed-headings">Typed headings</a></li>
+                <li><a href="#text-highlight">Text highlight</a></li>
+              </ul>
+            </nav>
+            <!-- / .nav -->
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+        <div class="col-xl-9 col-12">
+          <div class="row row-cols-1">
+            <div class="col mb-5" id="typography">
+              <div class="card">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Headings</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- HEADINGS -->
+                  <h1>H1. Bootstrap heading</h1>
+                  <h2>H2. Bootstrap heading</h2>
+                  <h3>H3. Bootstrap heading</h3>
+                  <h4>H4. Bootstrap heading</h4>
+                  <h5>H5. Bootstrap heading</h5>
+                  <h6 class="mb-0">H6. Bootstrap heading</h6>
+                  <!-- END HEADINGS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="display">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Display</h3>
+                </div>
+                <div class="card-body">
+                  <!-- DISPLAY -->
+                  <h1 class="display-1">Display 1</h1>
+                  <h1 class="display-2">Display 2</h1>
+                  <h1 class="display-3">Display 3</h1>
+                  <h1 class="display-4">Display 4</h1>
+                  <h1 class="display-5">Display 5</h1>
+                  <h1 class="display-6 mb-0">Display 6</h1>
+                  <!-- END DISPLAY -->
+                </div>
+              </div><!-- /.card -->
+            </div><!-- /.col -->
+            <div class="col mb-5" id="lead-text">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Lead text</h3>
+                </div>
+                <div class="card-body">
+                  <!-- LEAD -->
+                  <p class="lead"> This is a lead paragraph. It stands out from regular paragraphs. </p>
+                  <!-- END LEAD -->
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /.col -->
+            <div class="col mb-5" id="buttons">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Buttons</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- BUTTONS -->
+                  <button type="button" class="btn btn-primary mt-2 me-2">Primary</button>
+                  <button type="button" class="btn btn-secondary mt-2 me-2">Secondary</button>
+                  <button type="button" class="btn btn-success mt-2 me-2">Success</button>
+                  <button type="button" class="btn btn-danger mt-2 me-2">Danger</button>
+                  <button type="button" class="btn btn-warning mt-2 me-2">Warning</button>
+                  <button type="button" class="btn btn-info mt-2 me-2">Info</button>
+                  <button type="button" class="btn btn-light mt-2 me-2">Light</button>
+                  <button type="button" class="btn btn-dark mt-2 me-2">Dark</button>
+                  <button type="button" class="btn btn-link mt-2 me-2">Link</button>
+                  <!-- END BUTTONS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="buttons-outline">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Outline Buttons</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- BUTTONS -->
+                  <button type="button" class="btn btn-outline-primary mt-2 me-2">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary mt-2 me-2">Secondary</button>
+                  <button type="button" class="btn btn-outline-success mt-2 me-2">Success</button>
+                  <button type="button" class="btn btn-outline-danger mt-2 me-2">Danger</button>
+                  <button type="button" class="btn btn-outline-warning mt-2 me-2">Warning</button>
+                  <button type="button" class="btn btn-outline-info mt-2 me-2">Info</button>
+                  <button type="button" class="btn btn-outline-light mt-2 me-2">Light</button>
+                  <button type="button" class="btn btn-outline-dark mt-2 me-2">Dark</button>
+                  <!-- END BUTTONS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="buttons-sizes">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Buttons Sizes</h3>
+                </div>
+                <div class="card-body p-3">
+                  <div class="row">
+                    <div class="col-12">
+                      <!-- BUTTONS -->
+                      <button type="button" class="btn btn-sm btn-secondary mt-2 me-2">Secondary</button>
+                      <button type="button" class="btn btn-secondary mt-2 me-2">Secondary</button>
+                      <button type="button" class="btn btn-lg btn-secondary mt-2 me-2">Secondary</button>
+                      <!-- END BUTTONS -->
+                    </div>
+                    <!-- /.col-12 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-12">
+                      <!-- BUTTONS -->
+                      <button type="button" class="btn btn-sm btn-outline-secondary mt-2 me-2">Secondary</button>
+                      <button type="button" class="btn btn-outline-secondary mt-2 me-2">Secondary</button>
+                      <button type="button" class="btn btn-lg btn-outline-secondary mt-2 me-2">Secondary</button>
+                      <!-- END BUTTONS -->
+                    </div>
+                    <!-- /.col-12 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="buttons-accent">
+              <div class="card">
+                <div class="p-3 border-bottom">
+                  <h5 class="card-title text-uppercase mb-0">Buttons Accent</h5>
+                </div>
+                <div class="card-body p-3">
+                  <div class="mb-4">
+                    <!-- BUTTONS -->
+                    <a class="btn btn-accent">
+                      <span class="btn-label"> Start a project <svg width="49" height="16" viewBox="0 0 49 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9H48V7H0V9Z" />
+                        </svg>
+                      </span>
+                    </a>
+                    <!-- END BUTTONS -->
+                  </div>
+                  <div class="mb-2">
+                    <!-- BUTTONS -->
+                    <a class="btn btn-accent btn-accent-lg">
+                      <span class="btn-label"> Let's start a project <svg width="49" height="16" viewBox="0 0 49 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9H48V7H0V9Z" />
+                        </svg>
+                      </span>
+                    </a>
+                    <!-- END BUTTONS -->
+                  </div>
+                  <!-- /.mb-2 -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="buttons-extra">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Buttons Extra</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- BUTTONS -->
+                  <div class="mb-2">
+                    <a class="btn btn-more-arrow"><span class="btn-label">Read More</span></a>
+                  </div>
+                  <div class="mb-2">
+                    <a class="btn btn-more text-uppercase"><span class="btn-label">Read More</span></a>
+                  </div>
+                  <div>
+                    <a class="btn btn-more-2"><span class="btn-label">Read more</span></a>
+                  </div>
+                  <!-- END BUTTONS -->. <!-- BUTTONS -->
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-circle btn-sm btn-outline-primary mt-2 me-2">
+                      <i class="bi bi-search"></i>
+                    </button>
+                    <button type="button" class="btn btn-circle btn-outline-secondary mt-2 me-2">
+                      <i class="bi bi-telephone"></i>
+                    </button>
+                    <button type="button" class="btn btn-circle btn-pulse btn-lg btn-outline-success mt-2 me-2">
+                      <i class="bi bi-telephone"></i>
+                    </button>
+                  </div>
+                  <!-- END BUTTONS -->
+                  <!-- BUTTONS -->
+                  <div class="mb-2">
+                    <a href="#" class="btn btn-circle btn-primary btn-play"><i class="bi bi-caret-right-fill"></i></a>
+                  </div>
+                  <!-- END BUTTONS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="accordion">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Accordion</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- ACCORDION -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Accordion Item #1 </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Accordion Item #2 </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Accordion Item #3 </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--END ACCORDION -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="accordion2">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Accordion 2</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- ACCORDION -->
+                  <div class="accordion accordion-bullet" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2"> Accordion Item #1 </button>
+                      </h2>
+                      <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2"> Accordion Item #2 </button>
+                      </h2>
+                      <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2"> Accordion Item #3 </button>
+                      </h2>
+                      <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END ACCORDION -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="alerts">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Alerts</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- ALERTS -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-primary alert-outline alert-dismissible fade show mb-4" role="alert"> A simple primary alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-secondary alert-dismissible fade show mb-4" role="alert"> A simple secondary alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-success alert-dismissible fade show mb-4" role="alert"> A simple success alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert"> A simple danger alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-warning alert-dismissible fade show mb-4" role="alert"> A simple warning alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-info alert-dismissible fade show mb-4" role="alert"> A simple info alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-light alert-dismissible fade show mb-4" role="alert"> A simple light alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-dark alert-dismissible fade show mb-4" role="alert"> A simple dark alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-success" role="alert">
+                    <h3 class="alert-heading">Well done!</h3>
+                    <p> Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. </p>
+                    <hr />
+                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- END ALERTS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <div class="col mb-5" id="alerts-outline">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Alerts</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- ALERTS -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-primary alert-outline alert-dismissible fade show mb-4" role="alert"> A simple primary alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-secondary alert-dismissible fade show mb-4" role="alert"> A simple secondary alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-success alert-dismissible fade show mb-4" role="alert"> A simple success alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-danger alert-dismissible fade show mb-4" role="alert"> A simple danger alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-warning alert-dismissible fade show mb-4" role="alert"> A simple warning alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-info alert-dismissible fade show mb-4" role="alert"> A simple info alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-light alert-dismissible fade show mb-4" role="alert"> A simple light alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERT ITEM -->
+                  <!-- ALERT ITEM -->
+                  <div class="alert alert-outline-dark alert-dismissible fade show mb-4" role="alert"> A simple dark alert with <a href="#" class="alert-link">an example link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                  </div>
+                  <!-- END ALERTS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="avatars">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Avatars</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- AVATARS -->
+                  <div class="mb-4">
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white fs-24 wrem-16 hrem-16 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white wrem-10 hrem-10 ms-2 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white fs-8 wrem-6 hrem-6 ms-2 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white fs-24 wrem-16 hrem-16 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white wrem-10 hrem-10 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-secondary text-white fs-8 wrem-6 hrem-6 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                  </div>
+                  <!-- END AVATARS -->
+                  <!-- AVATARS -->
+                  <div class="mb-4">
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark fs-24 wrem-16 hrem-16 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark wrem-10 hrem-10 ms-2 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark fs-8 wrem-6 hrem-6 ms-2 rounded-circle">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark fs-24 wrem-16 hrem-16 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark wrem-10 hrem-10 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                    <!-- AVATAR ITEM -->
+                    <span class="avatar bg-white border border-2 border-dark text-dark fs-8 wrem-6 hrem-6 ms-2">
+                      <span>ORICA</span>
+                    </span>
+                    <!-- END AVATAR ITEM -->
+                  </div>
+                  <!-- END AVATARS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="blockquote">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Blockquote</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- BLOCKQUOTE -->
+                  <blockquote class="blockquote mx-7 my-4">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum elementum gravida. Ut in arcu ac libero commodo imperdiet Lorem ipsum dolor sit amet, consectetur adipisclit. Nullam convallis fermentumurna vitae. </p>
+                    <footer class="blockquote-footer"> Someone famous in <cite title="Source Title">Source Title</cite>
+                    </footer>
+                  </blockquote>
+                  <!-- END BLOCKQUOTE -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="breadcrumbs">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Breadcrumbs</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- BREADCRUMBS -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+                  <!-- END BREADCRUMBS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="carousel">
+              <div class="card shadow">
+                <div class="p-3 border-bottom">
+                  <h3 class="card-title mb-0">Carousel</h3>
+                </div>
+                <div class="card-body p-3">
+                  <!-- CAROUSEL -->
+                  <div class="row orica-custom-carousel orica-projects-carousel">
+                    <div class="col-md-9 order-md-2">
+                      <div class="swiper swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="portfolio-card hover-2">
+                              <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-1.jpg">
+                                <figure data-hoverable="true" data-cursor-text="Learn more">
+                                  <img src="img/production/portfolio/portfolio-5.jpg" srcset="img/production/portfolio/portfolio-5@2x.jpg 2x" alt="">
+                                </figure>
+                              </a>
+                            </div>
+                            <!-- /.portfolio-card -->
+                          </div>
+                          <!-- /.swiper-slide -->
+                          <div class="swiper-slide">
+                            <div class="portfolio-card hover-2">
+                              <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-2.jpg">
+                                <figure data-hoverable="true" data-cursor-text="Learn more">
+                                  <img src="img/production/portfolio/portfolio-5.jpg" srcset="img/production/portfolio/portfolio-5@2x.jpg 2x" alt="">
+                                </figure>
+                              </a>
+                            </div>
+                            <!-- /.portfolio-card -->
+                          </div>
+                          <!-- /.swiper-slide -->
+                          <div class="swiper-slide">
+                            <div class="portfolio-card hover-2">
+                              <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-3.jpg">
+                                <figure data-hoverable="true" data-cursor-text="Learn more">
+                                  <img src="img/production/portfolio/portfolio-5.jpg" srcset="img/production/portfolio/portfolio-5@2x.jpg 2x" alt="">
+                                </figure>
+                              </a>
+                            </div>
+                            <!-- /.portfolio-card -->
+                          </div>
+                          <!-- /.swiper-slide -->
+                          <div class="swiper-slide">
+                            <div class="portfolio-card hover-2">
+                              <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-2.jpg">
+                                <figure data-hoverable="true" data-cursor-text="Learn more">
+                                  <img src="img/production/portfolio/portfolio-5.jpg" srcset="img/production/portfolio/portfolio-5@2x.jpg 2x" alt="">
+                                </figure>
+                              </a>
+                            </div>
+                            <!-- /.portfolio-card -->
+                          </div>
+                          <!-- /.swiper-slide -->
+                        </div>
+                        <!-- /.swiper-wrapper -->
+                      </div>
+                      <!-- /.swiper -->
+                    </div>
+                    <!-- /.col-md-9-->
+                    <div class="col-md-3 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                      <div class="carousel-nav-container d-md-flex flex-column align-items-center align-items-lg-start ms-lg-7 h-100">
+                        <div class="carousel-counter d-flex align-items-center mb-md-0 mb-4">
+                          <span class="counter-current"></span>
+                          <span class="line-divider"></span>
+                          <span class="counter-total"></span>
+                        </div>
+                        <div class="carousel-nav d-flex align-items-center mt-auto">
+                          <a class="btn carousel-nav-prev">
+                            <svg width="49" height="16" viewBox="0 0 49 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM49 9H1V7H49V9Z" />
+                              <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM49 9H1V7H49V9Z" />
+                            </svg>
+                          </a>
+                          <span class="circle circle-primary"></span>
+                          <a class="btn carousel-nav-next">
+                            <svg width="49" height="16" viewBox="0 0 49 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9H48V7H0V9Z" />
+                              <path d="M48.7071 8.70711C49.0976 8.31658 49.0976 7.68342 48.7071 7.29289L42.3431 0.928932C41.9526 0.538408 41.3195 0.538408 40.9289 0.928932C40.5384 1.31946 40.5384 1.95262 40.9289 2.34315L46.5858 8L40.9289 13.6569C40.5384 14.0474 40.5384 14.6805 40.9289 15.0711C41.3195 15.4616 41.9526 15.4616 42.3431 15.0711L48.7071 8.70711ZM0 9H48V7H0V9Z" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.col-md-3 -->
+                  </div>
+                  <!-- /.row-->
+                  <!-- END CAROUSEL -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="counter">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Counters</h3>
+                </div>
+                <div class="card-body">
+                  <!-- COUNTERS -->
+                  <div class="col-md-12 my-4">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="achievment-item mb-3 mb-md-0">
+                          <div class="achievment-circle">
+                            <div class="achievment-circle-inner">
+                              <div class="achievment-circle-content">
+                                <h4 class="counter h2 d-flex align-items-center justify-content-center"><span class="circle me-2"></span> 480</h4>
+                                <span class="achievment-title text-uppercase">Satisfied Clients</span>
+                              </div>
+                              <!--/.achievment-circle-content -->
+                            </div>
+                            <!--/.achievment-circle-inner -->
+                          </div>
+                          <!--/.achievment-circle -->
+                        </div>
+                        <!--/.achievment -->
+                      </div>
+                      <!-- /.col-md-4 -->
+                      <div class="col-md-4">
+                        <div class="achievment-item mb-3 mb-md-0">
+                          <div class="achievment-circle">
+                            <div class="achievment-circle-inner">
+                              <div class="achievment-circle-content">
+                                <h4 class="counter h2 d-flex align-items-center justify-content-center"><span class="circle me-2"></span> 780</h4>
+                                <span class="achievment-title text-uppercase">Finished projects</span>
+                              </div>
+                              <!--/.achievment-circle-content -->
+                            </div>
+                            <!--/.achievment-circle-inner -->
+                          </div>
+                          <!--/.achievment-circle -->
+                        </div>
+                        <!--/.achievment -->
+                      </div>
+                      <!-- /.col-md-4 -->
+                      <div class="col-md-4">
+                        <div class="achievment-item mb-3 mb-md-0">
+                          <div class="achievment-circle">
+                            <div class="achievment-circle-inner">
+                              <div class="achievment-circle-content">
+                                <h4 class="counter h2 d-flex align-items-center justify-content-center"><span class="circle me-2"></span> 120</h4>
+                                <span class="achievment-title text-uppercase">Design Awwards</span>
+                              </div>
+                              <!--/.achievment-circle-content -->
+                            </div>
+                            <!--/.achievment-circle-inner -->
+                          </div>
+                          <!--/.achievment-circle -->
+                        </div>
+                        <!--/.achievment -->
+                      </div>
+                      <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- END COUNTERS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="form">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Form</h3>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 mb-8">
+                      <!-- FORM -->
+                      <form class="contact-form form-mui" method="post" action="/">
+                        <div class="messages"></div>
+                        <div class="row gx-4">
+                          <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required="" />
+                              <label for="form_name">First Name *</label>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your first name.</div>
+                            </div>
+                          </div>
+                          <!-- /column -->
+                          <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe" required="" />
+                              <label for="form_lastname">Last Name *</label>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your last name.</div>
+                            </div>
+                          </div>
+                          <!-- /column -->
+                          <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com" required="" />
+                              <label for="form_email">Email *</label>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                          </div>
+                          <!-- /column -->
+                          <div class="col-md-6">
+                            <div class="form-select-wrapper mb-4">
+                              <select class="form-select" id="form-select" required="">
+                                <option selected="" disabled="" value="">Select a department</option>
+                                <option value="1">Sales</option>
+                                <option value="2">Marketing</option>
+                                <option value="3">Customer Support</option>
+                              </select>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please select a department.</div>
+                            </div>
+                          </div>
+                          <!-- /column -->
+                          <div class="col-12">
+                            <div class="form-floating mb-4">
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required=""></textarea>
+                              <label for="form_message">Message *</label>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your messsage.</div>
+                            </div>
+                          </div>
+                          <!-- /column -->
+                          <div class="col-12 text-center">
+                            <button class="btn btn-more text-uppercase mb-2">
+                              <span class="btn-label">Send message</span>
+                            </button>
+                            <p class="text-muted">
+                              <strong class="text-primary">*</strong> These fields are required.
+                            </p>
+                          </div>
+                          <!-- /column -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                      <!--END FORM -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-md-12 mb-8">
+                      <!-- FORM -->
+                      <form class="contact-form" method="post" action="/">
+                        <div class="messages"></div>
+                        <div class="row gx-4">
+                          <div class="col-md-6">
+                            <div class="mb-4">
+                              <input id="first_name" type="text" name="first_name" class="form-control" placeholder="First Name*" required="" />
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your first name.</div>
+                            </div>
+                          </div>
+                          <!-- / .col-md-6 -->
+                          <div class="col-md-6">
+                            <div class="mb-4">
+                              <input id="last_name" type="text" name="last_name" class="form-control" placeholder="Last Name*" required="" />
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your last name.</div>
+                            </div>
+                          </div>
+                          <!-- / .col-md-6 -->
+                          <div class="col-md-6">
+                            <div class="mb-4">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" required="" />
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                          </div>
+                          <!-- / .col-md-6 -->
+                          <div class="col-md-6">
+                            <div class="mb-4">
+                              <select class="form-select" id="form-select" required="">
+                                <option selected="" disabled="" value="">Select a department</option>
+                                <option value="1">Sales</option>
+                                <option value="2">Marketing</option>
+                                <option value="3">Customer Support</option>
+                              </select>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please select a department.</div>
+                            </div>
+                          </div>
+                          <!-- / .col-md-6 -->
+                          <div class="col-12">
+                            <div class="mb-4">
+                              <textarea id="message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required=""></textarea>
+                              <div class="valid-feedback">Looks good!</div>
+                              <div class="invalid-feedback">Please enter your messsage.</div>
+                            </div>
+                          </div>
+                          <!-- / .col-md-12 -->
+                          <div class="col-12 text-center">
+                            <input type="submit" class="btn btn-secondary text-uppercase mb-2" value="Send message" />
+                            <p class="text-muted">
+                              <strong class="text-primary">*</strong> These fields are required.
+                            </p>
+                          </div>
+                          <!-- / .col-md-12 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                      <!-- END FORM -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-md-12 mb-8">
+                      <!-- CHECKBOXES -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault"> Default checkbox </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked"> Checked checkbox </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                        <label class="form-check-label" for="flexCheckIndeterminate"> Indeterminate checkbox </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled />
+                        <label class="form-check-label" for="flexCheckDisabled"> Disabled checkbox </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled />
+                        <label class="form-check-label" for="flexCheckCheckedDisabled"> Disabled checked checkbox </label>
+                      </div>
+                      <!-- END CHECKBOXES -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-md-12 mb-8">
+                      <!-- RADIO BUTTONS -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1"> Default radio </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                        <label class="form-check-label" for="flexRadioDefault2"> Default checked radio </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled />
+                        <label class="form-check-label" for="flexRadioDisabled"> Disabled radio </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled />
+                        <label class="form-check-label" for="flexRadioCheckedDisabled"> Disabled checked radio </label>
+                      </div>
+                      <!-- END RADIO BUTTONS -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- TOGGLES -->
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled />
+                        <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled />
+                        <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                      </div>
+                      <!-- END TOGGLES -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="lists">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">List</h3>
+                </div>
+                <div class="card-body">
+                  <!-- LIST -->
+                  <ul class="list-unordered bullet-primary mb-0">
+                    <li>Duis accumsan maximus dui vel iaculis.</li>
+                    <li>Duis accumsan maximus dui vel iaculis.</li>
+                    <li>Duis accumsan maximus dui vel iaculis.</li>
+                    <li>Duis accumsan maximus dui vel iaculis.</li>
+                  </ul>
+                  <!-- END LIST -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="lists-icons">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">List With Icons</h3>
+                </div>
+                <div class="card-body">
+                  <!-- LIST -->
+                  <ul class="icon-list bullet-primary mb-0">
+                    <li>
+                      <span><i class="bi bi-star"></i></span>
+                      <span>Duis accumsan maximus dui vel iaculis.</span>
+                    </li>
+                    <li>
+                      <span><i class="bi bi-check2-circle"></i></span>
+                      <span>Duis accumsan maximus dui vel iaculis.</span>
+                    </li>
+                    <li>
+                      <span><i class="bi bi-clock"></i></span>
+                      <span>Duis accumsan maximus dui vel iaculis.</span>
+                    </li>
+                    <li>
+                      <span><i class="bi bi-info-circle"></i></span>
+                      <span>Duis accumsan maximus dui vel iaculis.</span>
+                    </li>
+                  </ul>
+                  <!-- END LIST -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="lightbox">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Lightbox</h3>
+                </div>
+                <div class="card-body">
+                  <!-- LIGHTBOX -->
+                  <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-3@2x.jpg">
+                        <img src="img/production/portfolio/portfolio-3.jpg" srcset="img/production/portfolio/portfolio-3@2x.jpg 2x" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-5@2x.jpg">
+                        <img src="img/production/portfolio/portfolio-5.jpg" srcset="img/production/portfolio/portfolio-5@2x.jpg 2x" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <a href="#" class="spotlight" data-src="img/production/portfolio/portfolio-1@2x.jpg">
+                        <img src="img/production/portfolio/portfolio-1.jpg" srcset="img/production/portfolio/portfolio-1@2x.jpg 2x" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <!-- END LIGHTBOX -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="media">
+              <div class="card">
+                <div class="p-2 border-bottom">
+                  <h5 class="card-title text-uppercase mb-0">Media Player</h5>
+                </div>
+                <div class="card-body px-4 py-5">
+                  <!-- PLAYER -->
+                  <div class="js-player" data-poster="./img/production/about/about-1@2x.jpg" data-plyr-provider="vimeo" data-plyr-embed-id="114031146"></div>
+                  <!-- END PLAYER -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="modal">
+              <div class="card">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Modal</h3>
+                </div>
+                <div class="card-body">
+                  <!-- BUTTON -->
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#customModal"> Custom modal </button>
+                  <!-- END BUTTON -->
+                  <!-- BUTTON -->
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#subscribeModal2"> Subscribe classic </button>
+                  <!-- END BUTTON -->
+                  <!-- BUTTON -->
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#subscribeModal"> Subscribe alternative </button>
+                  <!-- END BUTTON -->
+                  <!-- MODAL -->
+                  <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="customModalLabel">Subscribe</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END MODAL -->
+                  <!-- MODAL -->
+                  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body text-center p-4">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <h3 class="text-uppercase">Join our community</h3>
+                          <p class="mb-4"> Once your order has been processed, your meals will be . Once your order has been processed, your meals will be shipped. </p>
+                          <form class="subscription-form form-mui">
+                            <input type="email" class="form-control" placeholder="Your Email" />
+                            <button class="btn btn-more text-uppercase">
+                              <span class="btn-label">Subscribe</span>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END MODAL -->
+                  <!-- MODAL -->
+                  <div class="modal fade" id="subscribeModal2" tabindex="-1" aria-labelledby="subscribeModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body text-center p-8">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <h3 class="text-uppercase">Join our community</h3>
+                          <p class="mb-4"> Once your order has been processed, your meals will be . Once your order has been processed, your meals will be shipped. </p>
+                          <form class="">
+                            <input type="email" class="form-control mb-2" placeholder="Your Email" />
+                            <div class="d-grid">
+                              <button class="btn btn-primary d-block text-uppercase">Subscribe</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END MODAL -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="progressbar">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Progress Bar</h3>
+                </div>
+                <div class="card-body">
+                  <!-- PROGRESS BARS -->
+                  <span class="progressbar-label">Uploading ...</span>
+                  <div class="progressbar progressbar-primary mb-4" data-value="100"></div>
+                  <span class="progressbar-label">Processing ...</span>
+                  <div class="progressbar progressbar-warning mb-4" data-value="75"></div>
+                  <span class="progressbar-label">Downloading ...</span>
+                  <div class="progressbar progressbar-success mb-4" data-value="50"></div>
+                  <span class="progressbar-label">Loading ...</span>
+                  <div class="progressbar progressbar-info" data-value="25"></div>
+                  <!-- END PROGRESS BARS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="progress-bar-bootstrap">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Progress Bar Default</h3>
+                </div>
+                <div class="card-body">
+                  <!-- PROGRESS BARS -->
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <!-- END PROGRESS BARS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="tabs">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Tabs</h3>
+                </div>
+                <div class="card-body">
+                  <!-- TABS -->
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                        <i class="bi bi-star"></i>Home </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                        <i class="bi bi-star"></i>Profile </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                        <i class="bi bi-star"></i>Contact </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active py-2" id="home" role="tabpanel" aria-labelledby="home-tab"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum laborum necessitatibus. Ea accusantium nostrum dicta consequuntur. Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                    <div class="tab-pane fade py-2" id="profile" role="tabpanel" aria-labelledby="profile-tab"> Aperiam cum laborum necessitatibus. Ea accusantium nostrum dicta consequuntur. Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                    <div class="tab-pane fade py-2" id="contact" role="tabpanel" aria-labelledby="contact-tab"> Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                  </div>
+                  <!-- END TABS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="tabs-pills">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Tabs Pills</h3>
+                </div>
+                <div class="card-body">
+                  <!-- TABS -->
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"> Home </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> Profile </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"> Contact </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active py-2" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                    <div class="tab-pane fade py-2" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                    <div class="tab-pane fade py-2" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> Iste cum minima maiores aspernatur veniam numquam nemo qui unde, delectus, natus blanditiis! </div>
+                  </div>
+                  <!-- END TABS -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="tables">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Tables</h3>
+                </div>
+                <div class="card-body">
+                  <!-- TABLE -->
+                  <div class="table-responsive bg-white">
+                    <table class="table mb-8">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                  <!-- END TABLE -->
+                  <!-- TABLE -->
+                  <div class="table-responsive bg-white">
+                    <table class="table table-striped mb-8 table-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                  <!-- END TABLE -->
+                  <!-- TABLE -->
+                  <div class="table-responsive bg-white">
+                    <table class="table table-striped table-dark mb-8 table-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                  <!-- END TABLE -->
+                  <!-- TABLE -->
+                  <div class="table-responsive bg-white">
+                    <table class="table table-hover mb-4 table-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                  <!-- END TABLE -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="team">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Team</h3>
+                </div>
+                <div class="card-body">
+                  <!-- TEAM -->
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4">
+                        <!-- TEAM ITEM -->
+                        <div class="team-member block-md-centered has-border-left text-center mb-4 mb-lg-8">
+                          <div class="team-member-inner py-4 px-2 hover-zoomout">
+                            <div class="hover-zoomout-wrapper rounded-circle mb-4 mx-auto">
+                              <img class="team-member-avatar" src="img/production/team/team-member-1.jpg" srcset="img/production/team/team-member-1@2x.jpg 2x" alt="" />
+                            </div>
+                            <h4 class="team-member-name text-dark text-uppercase">Alexandr Rich</h4>
+                            <div class="team-member-meta mb-3">CEO</div>
+                            <div class="social team-member-social">
+                              <ul class="list-unstyled social-icons mb-0">
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/.team-member-inner -->
+                        </div>
+                        <!-- /.team-member -->
+                        <!-- END TEAM ITEM -->
+                      </div>
+                      <!-- /.col-md-6 col-lg-4 -->
+                      <div class="col-md-6 col-lg-4">
+                        <!-- TEAM ITEM -->
+                        <div class="team-member block-md-centered has-border-left text-center mb-4 mb-lg-8">
+                          <div class="team-member-inner py-4 px-2 hover-zoomout">
+                            <div class="hover-zoomout-wrapper rounded-circle mb-4 mx-auto">
+                              <img class="team-member-avatar" src="img/production/team/team-member-2.jpg" srcset="img/production/team/team-member-2@2x.jpg 2x" alt="" />
+                            </div>
+                            <h4 class="team-member-name text-dark text-uppercase">Alexandr Rich</h4>
+                            <div class="team-member-meta mb-3">CEO</div>
+                            <div class="social">
+                              <ul class="list-unstyled social-icons mb-0">
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/.team-member-inner -->
+                        </div>
+                        <!-- /.team-member -->
+                        <!-- END TEAM ITEM -->
+                      </div>
+                      <!-- /.col-md-6 col-lg-4 -->
+                      <div class="col-md-6 col-lg-4">
+                        <!-- TEAM ITEM -->
+                        <div class="team-member block-md-centered has-border-left text-center mb-4 mb-lg-8">
+                          <div class="team-member-inner py-4 px-2 hover-zoomout">
+                            <div class="hover-zoomout-wrapper rounded-circle mb-4 mx-auto">
+                              <img class="team-member-avatar" src="img/production/team/team-member-3.jpg" srcset="img/production/team/team-member-3@2x.jpg 2x" alt="" />
+                            </div>
+                            <h4 class="team-member-name text-dark text-uppercase">Alexandr Rich</h4>
+                            <div class="team-member-meta mb-3">CEO</div>
+                            <div class="social">
+                              <ul class="list-unstyled social-icons mb-0">
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a href="javascript:void(0)" class="rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/.team-member-inner -->
+                        </div>
+                        <!-- /.team-member -->
+                        <!-- END TEAM ITEM -->
+                      </div>
+                      <!-- /.col-md-6 col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.col-12 -->
+                  <!-- END TEAM -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="testimonials">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Testimonials</h3>
+                </div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <!-- TESTIMONIAL -->
+                    <div class="testimonial d-flex mb-4">
+                      <div class="testimonial-thumb me-3 me-lg-4">
+                        <img src="img/production/companies/company-logo.jpg" srcset="img/production/companies/company-logo@2x.jpg" alt="Testimonial avatar" class="testimonial-img" />
+                      </div>
+                      <!-- /.testimonial-thumb -->
+                      <div class="testimonial-content has-border-left">
+                        <h3 class="testimonial-title text-dark text-uppercase">I use this service all the time</h3>
+                        <p class="testimonial-desc"> The final frontier. These are the voyages of the Starship Enterprise? As long as we live its you and me baby. There ain't nothin' Beats all you've ever saw. </p>
+                        <div class="testimonial-meta">
+                          <span class="author">Joahn Doe</span>
+                        </div>
+                        <!-- /.testimonial-meta -->
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testimonial -->
+                    <!-- END TESTIMONIAL -->
+                    <!-- TESTIMONIAL -->
+                    <div class="testimonial d-flex mb-4">
+                      <div class="testimonial-thumb me-3 me-lg-4">
+                        <img src="img/production/companies/company-logo.jpg" srcset="img/production/companies/company-logo@2x.jpg" alt="Testimonial avatar" class="testimonial-img" />
+                      </div>
+                      <!-- /.testimonial-thumb -->
+                      <div class="testimonial-content has-border-left">
+                        <h3 class="testimonial-title text-dark text-uppercase">I use this service all the time</h3>
+                        <p class="testimonial-desc"> The final frontier. These are the voyages of the Starship Enterprise? As long as we live its you and me baby. There ain't nothin' Beats all you've ever saw. </p>
+                        <div class="testimonial-meta">
+                          <span class="author">Joahn Doe</span>
+                        </div>
+                        <!-- /.testimonial-meta -->
+                      </div>
+                      <!-- /.testimonial-content -->
+                    </div>
+                    <!-- /.testimonial -->
+                    <!-- END TESTIMONIAL -->
+                  </div>
+                  <!-- /.col-md-12 -->
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="typed-headings">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Typed headings</h3>
+                </div>
+                <div class="card-body">
+                  <!-- TYPED HEADING -->
+                  <h1 class="hero-title"> We are <span id="hero-typer" class="typer" data-delay="40" data-delete-delay="6000" data-words="top-notch company,professional team,talented people">
+                    </span><span class="cursor text-primary" data-cursorDisplay="|" data-owner="hero-typer"></span>
+                  </h1>
+                  <!-- END TYPED HEADING -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col mb-5" id="highlight-text">
+              <div class="card shadow">
+                <div class="p-2 border-bottom">
+                  <h3 class="card-title mb-0">Text highlight</h3>
+                </div>
+                <div class="card-body">
+                  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div><!-- /.row -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.section -->
+  <footer class="site-footer section text-inverse border-top border-2 border-light" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <a href="index.html" class="logo-footer">
+              <img src="img/production/logo2.png" height="48" alt="logo" />
+            </a>
+            <p class="fs-16 mt-4"> Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit </p>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Services</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Website design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Branding </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Website development </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Packaging design </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Marketing & strategy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-2 col-md-4 col-sm-6 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget">
+            <h5 class="widget-title">Our Links</h5>
+            <ul class="list-unstyled menu-list">
+              <li>
+                <a href="javascript:void(0)"> Home </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> About us </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Services </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Team </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> Blog </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-2-->
+        <div class="col-lg-4 col-md-12 mt-3 mt-md-0 mb-md-3 mb-lg-0">
+          <div class="footer-widget mb-4">
+            <form class="subscription-form form-mui">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-more text-uppercase"><span class="btn-label">Subscribe</span></button>
+            </form>
+          </div>
+          <div class="footer-widget">
+            <ul class="icon-list mb-0">
+              <li>
+                <span>
+                  <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>Seattle, WA</span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 3L11 10L1 3" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span><a href="mailto:contact@kgacorp.com">contact@kgacorp.com</a></span>
+              </li>
+              <li>
+                <span>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9428 15.9562V18.9562C20.9439 19.2347 20.8869 19.5104 20.7753 19.7656C20.6637 20.0208 20.5001 20.2498 20.2949 20.4381C20.0897 20.6264 19.8474 20.7697 19.5836 20.8589C19.3197 20.9482 19.0402 20.9813 18.7628 20.9562C15.6856 20.6219 12.7298 19.5704 10.1328 17.8862C7.71663 16.3509 5.66814 14.3024 4.1328 11.8862C2.44278 9.27743 1.39105 6.30722 1.0628 3.21623C1.03781 2.9397 1.07068 2.66099 1.1593 2.39785C1.24793 2.13472 1.39038 1.89292 1.57757 1.68785C1.76477 1.48278 1.99261 1.31894 2.2466 1.20675C2.50058 1.09456 2.77514 1.03649 3.0528 1.03623H6.0528C6.53811 1.03145 7.0086 1.20331 7.37657 1.51976C7.74454 1.83622 7.98488 2.27568 8.0528 2.75623C8.17943 3.7163 8.41425 4.65896 8.7528 5.56623C8.88735 5.92415 8.91647 6.31314 8.83671 6.68711C8.75696 7.06108 8.57167 7.40434 8.3028 7.67623L7.0328 8.94623C8.45636 11.4498 10.5293 13.5227 13.0328 14.9462L14.3028 13.6762C14.5747 13.4074 14.918 13.2221 15.2919 13.1423C15.6659 13.0626 16.0549 13.0917 16.4128 13.2262C17.3201 13.5648 18.2627 13.7996 19.2228 13.9262C19.7086 13.9948 20.1522 14.2394 20.4693 14.6137C20.7865 14.988 20.955 15.4658 20.9428 15.9562Z" stroke="#0C0F1E" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span>+1 (206) 739-9690</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-4-->
+      </div>
+      <!-- /.row-->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="scroll-btn-down">
+    <button class="scroll-btn-container">
+      <span class="scroll-btn-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down scroll-btn-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <!-- /.scroll-btn -->
+  <!-- Uncomment to show Cookie popup -->
+  <span class="site-cursor"></span>
+  <!-- /.site-cursor -->
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/lib/imagesloaded.pkgd.min.js"></script>
+  <script src="js/lib/isotope.pkgd.min.js"></script>
+  <script src="js/lib/spotlight.bundle.js"></script>
+  <!-- Waypoints -->
+  <script src="js/lib/noframework.waypoints.min.js"></script>
+  <!-- Plyr Video Player -->
+  <script src="js/lib/plyr.js"></script>
+  <!-- Typer -->
+  <script src="js/lib/typer.js"></script>
+  <!-- Swiper Slider -->
+  <script src="js/lib/swiper-bundle.min.js"></script>
+  <!-- Progress bar -->
+  <script src="js/lib/progressbar.min.js"></script>
+  <!-- Counter Up -->
+  <script src="js/lib/counterup2.min.js"></script>
+  <!-- Theme scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
