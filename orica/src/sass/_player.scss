@@ -1,0 +1,14 @@
+.plyr__control--overlaid {
+  --plyr-video-control-background-hover: #{$primary};
+    padding: 1.5rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    color: $primary;
+    transition: all 0.3s ease-in-out;
+    &:focus,
+    &:hover {
+      background: $primary;
+      color: $white;
+      box-shadow: $box-shadow;
+    }
+  }

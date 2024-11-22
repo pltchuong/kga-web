@@ -1,0 +1,45 @@
+//
+// Cursor
+//
+.site-cursor {
+    width: 0.875rem;   
+    height: 0.875rem;
+    background-color: $primary;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1500;
+    .site-cursor-text{
+        transform: scale(0);
+        transition: all 0.15s ease-in-out;
+        &.is-visible{
+            transform: scale(1); 
+        }
+    }
+    &.small {
+        width: 0.5rem;   
+        height: 0.5rem;
+    }
+    &.large {
+        width:7.5rem;       
+        height: 7.5rem;
+        background-color: $white;
+        color: $primary;
+        font-weight: 400;
+        @include font-size(18px);
+    }
+    &.link {
+        width:2rem;       
+        height: 2rem;
+        background-color: $primary;
+        opacity:0.8;
+    }
+
+}

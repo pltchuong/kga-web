@@ -1,0 +1,26 @@
+.team-member{
+    img{
+        transition: all 0.3s ease-in-out;
+        width:100%;
+        height: 100%;
+    }
+}
+
+.team-member{
+    .team-member-avatar{
+        margin-bottom: 3.5rem;
+    }
+    .team-member-name{
+        color: $dark;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.team-member{  
+    .hover-zoomout-wrapper{
+        width: 12rem;
+        height:12rem;
+        border: 2px solid $gray-200;
+        perspective: 3000px;
+    }
+}

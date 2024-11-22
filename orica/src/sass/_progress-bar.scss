@@ -1,0 +1,44 @@
+//
+// Progress bar
+//
+.progressbar {
+    --progressbar-height: 0.5rem;
+    position: relative;
+    height: var(--progressbar-height);
+
+    svg {
+        border-radius: var(--progressbar-height);
+        height: var(--progressbar-height);
+
+        path {
+            border-radius: var(--progressbar-height);
+
+            &:first-child {
+                stroke: $gray-100;
+            }
+        }
+    }
+
+    .progressbar-counter {
+        color: $gray-600;
+        position: absolute;
+        right: 0.25rem;
+        top: -1rem;
+        padding: 0;
+        margin: 0;
+        transform: translate(0, -50%);
+    }
+
+    @each $color,
+    $value in $theme-colors {
+        &.progressbar-#{$color} svg path:last-child {
+            stroke: $value;
+        }
+    }
+}
+
+.progressbar-label {
+    display: inline-block;
+    color: $gray-600;
+    margin-left: 0.25rem;
+}

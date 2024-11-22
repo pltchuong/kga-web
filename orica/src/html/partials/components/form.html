@@ -1,0 +1,328 @@
+<div class="col mb-5" id="form">
+    <div class="card shadow">
+        <div class="p-2 border-bottom">
+            <h3 class="card-title mb-0">Form</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12 mb-8">
+                    <!-- FORM -->
+                    <form class="contact-form form-mui" method="post" action="/">
+                        <div class="messages"></div>
+                        <div class="row gx-4">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-4">
+                                    <input
+                                        id="form_name"
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        placeholder="Jane"
+                                        required=""
+                                    />
+                                    <label for="form_name">First Name *</label>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-md-6">
+                                <div class="form-floating mb-4">
+                                    <input
+                                        id="form_lastname"
+                                        type="text"
+                                        name="surname"
+                                        class="form-control"
+                                        placeholder="Doe"
+                                        required=""
+                                    />
+                                    <label for="form_lastname">Last Name *</label>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-md-6">
+                                <div class="form-floating mb-4">
+                                    <input
+                                        id="form_email"
+                                        type="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="jane.doe@example.com"
+                                        required=""
+                                    />
+                                    <label for="form_email">Email *</label>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-md-6">
+                                <div class="form-select-wrapper mb-4">
+                                    <select class="form-select" id="form-select" required="">
+                                        <option selected="" disabled="" value="">Select a department</option>
+                                        <option value="1">Sales</option>
+                                        <option value="2">Marketing</option>
+                                        <option value="3">Customer Support</option>
+                                    </select>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please select a department.</div>
+                                </div>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-12">
+                                <div class="form-floating mb-4">
+                                    <textarea
+                                        id="form_message"
+                                        name="message"
+                                        class="form-control"
+                                        placeholder="Your message"
+                                        style="height: 150px"
+                                        required=""
+                                    ></textarea>
+                                    <label for="form_message">Message *</label>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your messsage.</div>
+                                </div>
+                            </div>
+                            <!-- /column -->
+                            <div class="col-12 text-center">
+                                <button class="btn btn-more text-uppercase mb-2">
+                                    <span class="btn-label">Send message</span>
+                                </button>
+                                <p class="text-muted">
+                                    <strong class="text-primary">*</strong> These fields are required.
+                                </p>
+                            </div>
+                            <!-- /column -->
+                        </div>
+                        <!-- /.row -->
+                    </form>
+                    <!--END FORM -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12 mb-8">
+                    <!-- FORM -->
+                    <form class="contact-form" method="post" action="/">
+                        <div class="messages"></div>
+                        <div class="row gx-4">
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <input
+                                        id="first_name"
+                                        type="text"
+                                        name="first_name"
+                                        class="form-control"
+                                        placeholder="First Name*"
+                                        required=""
+                                    />
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                            </div>
+                            <!-- / .col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <input
+                                        id="last_name"
+                                        type="text"
+                                        name="last_name"
+                                        class="form-control"
+                                        placeholder="Last Name*"
+                                        required=""
+                                    />
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                            </div>
+                            <!-- / .col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <input
+                                        id="form_email"
+                                        type="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="Email*"
+                                        required=""
+                                    />
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                            </div>
+                            <!-- / .col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <select class="form-select" id="form-select" required="">
+                                        <option selected="" disabled="" value="">Select a department</option>
+                                        <option value="1">Sales</option>
+                                        <option value="2">Marketing</option>
+                                        <option value="3">Customer Support</option>
+                                    </select>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please select a department.</div>
+                                </div>
+                            </div>
+                            <!-- / .col-md-6 -->
+                            <div class="col-12">
+                                <div class="mb-4">
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        class="form-control"
+                                        placeholder="Your message"
+                                        style="height: 150px"
+                                        required=""
+                                    ></textarea>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your messsage.</div>
+                                </div>
+                            </div>
+                            <!-- / .col-md-12 -->
+                            <div class="col-12 text-center">
+                                <input
+                                    type="submit"
+                                    class="btn btn-secondary text-uppercase mb-2"
+                                    value="Send message"
+                                />
+                                <p class="text-muted">
+                                    <strong class="text-primary">*</strong> These fields are required.
+                                </p>
+                            </div>
+                            <!-- / .col-md-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </form>
+                    <!-- END FORM -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12 mb-8">
+                    <!-- CHECKBOXES -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault"> Default checkbox </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label" for="flexCheckChecked"> Checked checkbox </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
+                        <label class="form-check-label" for="flexCheckIndeterminate"> Indeterminate checkbox </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled />
+                        <label class="form-check-label" for="flexCheckDisabled"> Disabled checkbox </label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckCheckedDisabled"
+                            checked
+                            disabled
+                        />
+                        <label class="form-check-label" for="flexCheckCheckedDisabled">
+                            Disabled checked checkbox
+                        </label>
+                    </div>
+                    <!-- END CHECKBOXES -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12 mb-8">
+                    <!-- RADIO BUTTONS -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1"> Default radio </label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2"> Default checked radio </label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDisabled"
+                            id="flexRadioDisabled"
+                            disabled
+                        />
+                        <label class="form-check-label" for="flexRadioDisabled"> Disabled radio </label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled"
+                            checked
+                            disabled
+                        />
+                        <label class="form-check-label" for="flexRadioCheckedDisabled"> Disabled checked radio </label>
+                    </div>
+                    <!-- END RADIO BUTTONS -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- TOGGLES -->
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                        <label class="form-check-label" for="flexSwitchCheckDefault"
+                            >Default switch checkbox input</label
+                        >
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                        <label class="form-check-label" for="flexSwitchCheckChecked"
+                            >Checked switch checkbox input</label
+                        >
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled />
+                        <label class="form-check-label" for="flexSwitchCheckDisabled"
+                            >Disabled switch checkbox input</label
+                        >
+                    </div>
+                    <div class="form-check form-switch">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckCheckedDisabled"
+                            checked
+                            disabled
+                        />
+                        <label class="form-check-label" for="flexSwitchCheckCheckedDisabled"
+                            >Disabled checked switch checkbox input</label
+                        >
+                    </div>
+                    <!-- END TOGGLES -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>
+<!-- /.col -->

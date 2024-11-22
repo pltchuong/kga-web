@@ -1,0 +1,52 @@
+//
+// Testimonials
+//
+.testimonial{
+    .testimonial-thumb{
+        img{
+            width: 5rem;
+            height: 5rem;
+            border: 2px solid $gray-200;
+            border-radius: 100%;
+            transition: border-color 0.4s ease-in-out;
+            @include media-breakpoint-down(md) {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+    }
+    &:hover{
+        .testimonial-thumb{
+            img{
+                border-color:$primary;
+            }
+        }
+    }
+    .testimonial-content{
+        padding: 0 1rem;
+        @include media-breakpoint-down(md) {
+            padding: 0 0 0 1rem;
+        }
+    }
+    .testimonial-desc{
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+    .testimonial-meta{
+        .author, 
+        .date{
+            line-height: 1.71;
+            display:inline-block;
+            color:$gray-200;
+        }
+        .author{
+            font-size: 0.875rem;
+        }
+        .date{
+            margin-left: 1rem;
+            font-size: 0.75rem;
+        }
+    }
+}

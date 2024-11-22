@@ -1,0 +1,97 @@
+//
+// Preloader
+//
+#preloader {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Preloader 1
+.circles-animation {
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    filter: blur(6px) contrast(20);
+    .circle-1,
+    .circle-2 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: $dark;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .circle-1 {
+        left: 20%;
+        animation: circle-l 2s ease infinite;
+    }
+    .circle-2 {
+        left: 80%;
+        animation: circle-r 2s ease infinite;
+        background: $primary;
+    }
+}
+@keyframes circle-l {
+    0% {
+        left: 20%;
+        transform: scale(1);
+    }
+    50% {
+        left: 50%;
+        transform: scale(2);
+    }
+    100% {
+        left: 20%;
+        transform: scale(1);
+    }
+}
+@keyframes circle-r {
+    0% {
+        left: 80%;
+        transform: scale(1);
+    }
+    50% {
+        left: 50%;
+        transform: scale(2);
+    }
+    100% {
+        left: 80%;
+        transform: scale(1);
+    }
+}
+// Preloader 2
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    .pulse {
+        background: $primary;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        transform: scale(0.1);
+        transition: opacity 200ms linear;
+        .pulse1 {
+            animation: pulse 2.2s linear infinite;
+        }
+        .pulse2 {
+            animation: pulse 2.2s -1000ms linear infinite;
+        }
+    }
+}
+@keyframes pulse {
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,47 @@
+//
+// Titles
+//
+.section-heading{
+    margin-bottom: 4rem;
+    @include media-breakpoint-down(md) {
+        margin-bottom:2rem;
+    }
+}
+.section-title{
+    display: block;
+    overflow: hidden;
+    margin-top: 0px;
+    text-align: left;
+    margin-bottom:2rem;
+    @include media-breakpoint-down(md) {
+        margin-bottom:1.5rem;
+    }
+}
+.section-subtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.section-desc-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-desc-primary{
+    font-size: 1.125rem;
+    line-height: 1.77;
+    @include media-breakpoint-down(md) {
+        margin-bottom:1rem;
+    }
+}
+.section-desc-secondary{
+    font-size: 0.875rem;
+    line-height: 1.72;
+    color: $gray-200;
+}
+.section-desc-primary, 
+.section-desc-secondary{
+    p{
+        margin:0;
+    }
+}

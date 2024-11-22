@@ -1,0 +1,40 @@
+//
+// Carousel global style
+//
+.carousel-nav{
+    .carousel-nav-next,
+    .carousel-nav-prev{
+        padding:0 0.2rem;
+        line-height:1;
+        font-size:1rem;
+        svg{
+            fill: $gray-400;
+            transition: all 0.4s ease-in-out;
+        }
+        &:hover{
+            svg{
+                fill: $dark;
+            }
+        }
+    }
+    .carousel-nav-prev{
+        margin-right: 1rem;
+    }
+    .carousel-nav-next{
+        margin-left: 1rem;
+    }
+}
+.carousel-counter{
+    .counter-total,
+    .counter-current{
+        font-weight:bold;
+        font-size:18px;
+        line-height: 1.33;
+    }
+    .counter-current{
+        color: $dark;
+    }
+    .counter-total{
+        color: $gray-400;
+    }
+}

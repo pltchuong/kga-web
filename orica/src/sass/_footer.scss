@@ -1,0 +1,29 @@
+.site-footer{
+    a{
+        color: $gray-400;
+        &:hover{
+            color: $black;
+        }
+    }
+    .footer-widget{
+        .widget-title{
+            text-transform: uppercase;
+            color: $dark;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .list-unstyled{
+        li{
+            font-size: 0.75rem;
+        }
+        li + li {
+            margin-top: .5rem;
+        }
+    }
+    .menu-list{
+        a{
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+    }
+}

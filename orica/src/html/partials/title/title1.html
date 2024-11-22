@@ -1,0 +1,35 @@
+<div class="section-heading">
+    <h2 class="section-title h2">@@title</h2>
+    <div class="row row-cols-lg-2">
+        <div class="col">
+            <div class="row">
+                @@if (descPrimary && descSecondary) {
+                <div class="col-sm-6">
+                    <div class="section-desc-primary">
+                        <p>
+                            @@descPrimary
+                        </p>
+                    </div><!-- /.section-desc-primary -->
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <div class="section-desc-secondary">
+                        <p>
+                            @@descSecondary
+                        </p>
+                    </div><!-- /.section-desc-secondary -->
+                </div><!-- /.col -->
+            }
+            @@if (descPrimary && !descSecondary) {
+                <div class="col-12">
+                    <div class="section-desc-primary">
+                        <p>
+                            @@descPrimary 
+                        </p>
+                    </div>
+                </div><!-- /.col -->
+            }
+            </div><!-- /.row -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</div>
+<!-- /.section-heading -->

@@ -1,0 +1,155 @@
+//
+// Helpers
+//
+.section {
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
+    position: relative;
+    @include media-breakpoint-down(md) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+// Border
+.line-divider {
+    height: 0;
+    margin: 0 2rem;
+    border-top: 2px solid $gray-400;
+    width: 3rem;
+}
+
+// Border
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $gray-200;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+    &.circle-primary {
+        background-color: $primary;
+    }
+}
+
+// Border
+.has-border-left {
+    border-left: 2px solid $black !important;
+}
+
+.has-border-right {
+    border-right: 2px solid $black !important;
+}
+
+.has-border-top-light {
+    border-top: 2px solid rgba($black, .05) !important;
+}
+
+.border-gray-100 {
+    border-color: $gray-100;
+}
+
+.border-gray-200 {
+    border-color: $gray-200;
+}
+
+.border-gray-400 {
+    border-color: $gray-400;
+}
+
+.border-gray-600 {
+    border-color: $gray-600;
+}
+
+.block-md-centered{
+    @include media-breakpoint-down(md) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+// Width according to spacers
+@each $name,
+$value in $spacers {
+    .wrem-#{$name} {
+        width: $value !important;
+    }
+}
+
+// Height according to spacers
+@each $name,
+$value in $spacers {
+    .hrem-#{$name} {
+        height: $value !important;
+    }
+}
+
+// Width 
+@for $i from 1 through 20 {
+    .w-#{$i*5} {
+        width: $i*5% !important;
+    }
+}
+
+// Max-width 
+@for $i from 1 through 20 {
+    .mw-#{$i*5} {
+        max-width: $i*5% !important;
+    }
+}
+
+// Shadow 
+.shadow {
+    box-shadow: $shadow !important;
+}
+
+.shadow-lg {
+    box-shadow: $shadow-lg !important;
+}
+
+.shadow-md {
+    box-shadow: $shadow-md !important;
+}
+
+// Font-size 
+@for $i from 1 through 100 {
+    .fs-#{$i} {
+        @include font-size(0.0625rem*$i !important);
+    }
+}
+
+// Visibility 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+// Vertical-line
+.vertical-line {
+    height: 10px;
+    width: 10px;
+    border-radius: 4px;
+    margin-left: 10%;
+    background-color: #431;
+    margin-top: 20%;
+    animation: grow 3s forwards;
+    position: relative;
+}
+
+@keyframes grow {
+    0% {
+        height: 0px;
+        top: 0;
+    }
+
+    100% {
+        height: 200px;
+        top: -100px;
+    }
+}

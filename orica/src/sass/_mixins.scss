@@ -1,0 +1,29 @@
+@mixin font-style($font-size, $font-weight, $line-height, $font-style, $letter-spacing) {
+    @if $font-size {
+        font-size: $font-size * 1px;
+    }
+
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+
+    @if $font-style {
+        font-style: $font-style;
+    }
+
+    @if $line-height {
+        line-height: $line-height;
+    }
+
+    @if $letter-spacing {
+        letter-spacing: $letter-spacing;
+    }
+}
+
+@mixin fonts($font-params) {
+    //Loop through styles map
+    @each $property,
+    $value in $font-params {
+        #{$property}: $value;
+    }
+}

@@ -1,0 +1,68 @@
+//
+// features.scss
+//
+
+/*********************************/
+/*         Features & Services   */
+/*===============================*/
+
+.feature {
+    transition: all 0.4s ease-in-out;
+    &-icon {
+        color: $muted;
+        @include font-size(1.875rem);
+        font-weight:500;
+        margin-bottom:4rem;
+        transition: all 0.4s ease-in-out;
+        @include media-breakpoint-down(md) {
+            margin-bottom:2rem;
+        }
+        svg{
+            transition: all 0.4s ease-in-out;
+        }
+        i{
+            @include font-size(3.6rem);
+            transition: all 0.4s ease-in-out;
+        }
+        .feature-icon-text{
+            transition: all 0.4s ease-in-out;
+        }
+        &.icon-circle{
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $muted;
+        }
+    }
+    &-title{
+        color: $dark;
+    }
+    .btn-more-2{
+        color: $dark;
+    }
+    &:hover, &.active {
+        .feature-icon {
+            svg{
+                fill: $primary;
+            }
+            i{
+                color: $primary;
+            }
+            .feature-icon-text{
+                color: $primary;
+            }
+            .circle{
+                background-color: $primary;
+            }
+            &.icon-circle{
+                border-color: $primary;
+                i{
+                    color: $muted;
+                }
+            }
+        }
+    }
+}

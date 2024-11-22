@@ -1,0 +1,84 @@
+//
+// Cookie
+//
+
+.cookie-popup {
+    --cookie-popup-width: 37rem;
+    --cookie-popup-shift: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    margin: 0 auto;
+    max-width: var(--cookie-popup-width);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0 12px 24px rgba(12, 15, 30, 0.15);
+    animation: fadeIn ease 0.6s;
+    &.hide{
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+        animation: fadeOut ease 1s;
+    }
+    .cookie-popup-actions {
+        margin-left: 1rem;
+
+        a + a,
+        button + button {
+            margin-left: 1rem;
+        }
+        @include media-breakpoint-down(md) {
+            width:100%;
+            margin:1rem 0 0 0;
+            a + a,
+            button + button {
+                margin-left: 0;
+                margin-top:1rem;
+                width:100%;
+                display:block;
+            }
+        }
+    }
+
+    &.cookie-popup-right,
+    &.cookie-popup-left {
+        left: 1rem;
+        right: 1rem;
+    }
+
+    &.cookie-popup-right {
+
+        @each $name,
+        $value in $grid-breakpoints {
+            @include media-breakpoint-up($name) {
+                @if ($value >= 768) {
+                    left: auto;
+                    right: calc((100vw - $value)/2)
+                }
+
+            }
+        }
+    }
+
+    &.cookie-popup-left {
+        @each $name,
+        $value in $grid-breakpoints {
+            @include media-breakpoint-up($name) {
+                @if ($value >= 768) {
+                    right: auto;
+                    left: calc((100vw - $value)/2)
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}

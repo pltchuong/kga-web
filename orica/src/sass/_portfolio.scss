@@ -1,0 +1,98 @@
+//
+// Portfolio
+//
+.portfolio-card {
+    position: relative;
+    figure {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        display: block;
+        margin:0;
+    }
+
+    img {
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .portfolio-card-overlay{
+        background-color: rgba(27, 28, 30, 0.75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0;
+        bottom:0;
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        padding:1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        overflow: hidden;
+        .portfolio-card-content{
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+        .portfolio-card-date,
+        .portfolio-card-title{
+            color: $white;
+        }
+    }
+
+    .circle{
+        position: absolute;
+        background-color: $white;
+        top: 1rem;
+        right: 1rem;
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+        .portfolio-card-overlay{
+            opacity: 1; 
+        }
+        .circle{
+            background-color: $primary;
+            transform: scale(1.2);
+            transform-origin: 0;
+        }
+    }
+    .portfolio-card-date{
+        font-size: 0.75rem;
+		line-height: 1.33;
+    }
+    .portfolio-card-title{
+        text-transform: uppercase;
+        @include font-size(1.125rem);
+        margin:0;
+    }
+    .portfolio-card-desc{
+        margin:0;
+    }
+}
+
+.hover-zoomout {
+
+    figure, .hover-zoomout-wrapper {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        perspective: 1600px;
+    }
+ 
+    img {
+        transform: translate3d(0, 0, 300px);
+        transition: opacity 0.4s, transform 0.5s;
+    }
+
+    &:hover {
+        img {
+            transform: translate3d(0, 0, 0px);
+        }
+    }
+}

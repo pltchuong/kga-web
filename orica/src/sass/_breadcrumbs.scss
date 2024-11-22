@@ -1,0 +1,36 @@
+//
+// Breadcrumb
+//
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+    margin-bottom: $breadcrumb-margin-bottom;
+    @include font-size($breadcrumb-font-size);
+    list-style: none;
+    background-color: $breadcrumb-bg;
+    @include border-radius($breadcrumb-border-radius);
+  }
+  
+  .breadcrumb-item {
+    + .breadcrumb-item {
+      padding-left: $breadcrumb-item-padding-x;
+  
+      &::before {
+        float: left;
+        padding-right: $breadcrumb-item-padding-x;
+        color: $breadcrumb-divider-color;
+        content: '\2022';
+        transition: color 0.3s ease-in-out;
+      }
+      &:hover{
+        &::before {
+          color: $primary;
+        }
+      }
+    }
+  
+    &.active {
+      color: $breadcrumb-active-color;
+    }
+}

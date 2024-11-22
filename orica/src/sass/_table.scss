@@ -1,0 +1,15 @@
+//
+// Table
+//
+th,
+.table-striped > tbody > tr:nth-of-type(#{$table-striped-order}) th{
+    color: $table-th-font-color;
+    text-transform: uppercase;
+}
+
+.table-dark,
+.table-dark.table-striped > tbody > tr:nth-of-type(#{$table-striped-order}) {
+    th {
+        color: #fff;
+    }
+}

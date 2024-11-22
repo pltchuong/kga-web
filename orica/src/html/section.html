@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('head-scripts.html',{
+"title": "Home"
+})
+
+<body>
+
+    @@include('navbar.html')
+    
+    <section class="section border-bottom border-2 border-light" data-scroll-section="true">
+        <div class="container">
+            @@include('title/title1.html',{
+                "title": 'Services we provide',
+                "descPrimary": 'Everything is easy with us. You can start by contacting us, then fill out the form and relax',
+                "descSecondary": 'Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit amet',
+                })
+            <div class="row">
+                <div class="col-lg-8 offset-lg-4">
+                    
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section -->
+
+    @@include('footer.html')
+
+    @@include('footer-scripts.html')
+
+</body>
+
+</html>

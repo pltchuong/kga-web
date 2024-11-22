@@ -1,0 +1,49 @@
+<div class="section-heading">
+    <h2 class="section-title h2">@@title</h2>
+    <div class="row row-cols-lg-2">
+        <div class="col-lg-6">
+            <div class="row">
+                @@if (descPrimary && descSecondary) {
+                <div class="col-md-6">
+                    <div class="section-desc-primary">
+                        <p>
+                            @@descPrimary
+                        </p>
+                    </div><!-- /.section-desc-primary -->
+                </div><!-- /.col -->
+                <div class="col-md-6">
+                    <div class="section-desc-secondary">
+                        <p class="mb-0">
+                            @@descSecondary
+                        </p>
+                    </div><!-- /.section-desc-secondary -->
+                </div><!-- /.col -->
+            }
+            @@if (descPrimary && !descSecondary) {
+                <div class="col-md-12">
+                    <div class="section-desc-primary">
+                        <p class="mb-0">
+                            @@descPrimary 
+                        </p>
+                    </div>
+                </div><!-- /.col -->
+            }
+            </div><!-- /.row -->
+        </div><!-- /.col -->
+        <div class="col-lg-3 offset-lg-3">
+            <form class="search-form form-mui mt-4 mt-lg-0">
+                <div class="form-floating">
+                    <input type="text" id="search" class="form-control" placeholder="Search">
+                    <button type="submit" class="btn btn-more text-uppercase">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.0004 19L14.6504 14.65" stroke="" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </button>
+                    <label for="search">Search</label>
+                </div>
+            </form>
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</div>
+<!-- /.section-heading -->

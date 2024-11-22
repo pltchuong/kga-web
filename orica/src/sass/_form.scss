@@ -1,0 +1,61 @@
+//
+// Form
+//
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}
+
+.form-floating {
+  > .form-control,
+  > .form-select,
+  > label {
+    line-height: $form-floating-line-height;
+  }
+}
+.form-mui{
+   .form-control,
+   .form-select{
+    border: 0;
+    border-bottom: $input-border-width solid $input-border-color;
+  } 
+  .form-floating, 
+  .form-select-wrapper{
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $input-focus-border-color;
+        transition: all 0.3s ease-in-out;
+    }
+    &:focus-within{
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+}
+.subscription-form,
+.search-form{
+  position: relative;
+  button {
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+    outline: none !important;
+    svg{
+      stroke: $black;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover{
+      svg{
+        stroke: $primary;
+      }
+    }
+  }
+}

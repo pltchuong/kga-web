@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('head-scripts.html',{
+"title": "Contact us"
+})
+
+<body>
+
+  @@include('navbar.html')
+
+  <section class="pt-lg-8 pt-4" data-scroll-section='true'>
+    <div class="container">
+      @@include('title/title1.html',{
+      "title": 'Get in Touch',
+      "descPrimary": 'Everything is easy with us. You can start by contacting us, then fill out the form and relax. Lorem ipsum dolor sit amet. Everything is easy with us.',
+      "descSecondary": '',
+      })
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.section-->
+  <section class="section pt-0 pb-lg-15 pb-5" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 offset-lg-3">
+          <div class="row">
+            <div class="col-12">
+                <hr class="mt-0 mb-4 mb-md-5 mb-lg-8" />
+            </div>
+            <!-- /.col-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+              <div class="col-12">
+                  <h3 class="h3 text-uppercase mb-3 mb-lg-4">Let's make something great together</h3>
+              </div>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-7">
+              <div class="map map-large border-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1645113617319!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-5">
+              <div class="d-flex flex-row mb-4 mt-3 mt-lg-0">             
+                <div class="has-border-left py-3 ps-2">
+                  <h5 class="text-uppercase">
+                    <span class="icon text-primary me-2 fs-22"> <i class="bi bi-geo-alt"></i> </span>Address
+                  </h5>
+                  <address>Prospect Lion Landau 199/2, <br>Kharkiv, Ukraine
+                  </address>
+                </div>
+              </div>
+              <div class="d-flex flex-row mb-4">
+                <div class="has-border-left py-3 ps-2">
+                  <h5 class="text-uppercase">
+                    <span class="icon text-primary me-2 fs-22"> <i class="bi bi-envelope"></i> </span>E-mail
+                  </h5>
+                  <p class="mb-0"><a href="contact@orica.com">contact@orica.com</a></p>
+                  <p class="mb-0"><a href="support@orica.com">support@orica.com</a></p>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="has-border-left py-3 ps-2">
+                  <h5 class="text-uppercase">
+                    <span class="icon text-primary me-2 fs-22"> <i class="bi bi-telephone"></i> </span>Phone
+                  </h5>
+                  <p class="mb-0">+ 00 (050) 123 45 67</p>
+                  <p class="mb-0">+ 00 (096) 123 45 67</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-md-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.section-->
+  <section class="section pt-0 pb-lg-15 pb-5" data-scroll-section='true'>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 offset-lg-3">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="h3 text-uppercase mb-3 mb-lg-4">Drop Us a Line</h3>
+                  <p class="mb-4">Reach out to us from our contact form and we will get back to you shortly.</p>
+                </div>
+                <!-- /.col-md-12 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.col-md-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-12">
+              <!-- CONTACT FORM -->
+              <form id="contact-form" class="contact-form form-mui" method="post" action="/">
+                <div class="messages"></div>
+                <div class="row gx-4">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required="">
+                      <label for="form_name">First Name <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your first name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe"
+                        required="">
+                      <label for="form_lastname">Last Name <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your last name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_email" type="email" name="email" class="form-control"
+                        placeholder="jane.doe@example.com" required="">
+                      <label for="form_email">Email <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please provide a valid email address. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-select-wrapper mb-4">
+                      <select class="form-select" id="form-select" required="">
+                        <option selected="" disabled="" value="">Select a department</option>
+                        <option value="1">Sales</option>
+                        <option value="2">Marketing</option>
+                        <option value="3">Customer Support</option>
+                      </select>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please select a department. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Your message"
+                        style="height: 150px" required=""></textarea>
+                      <label for="form_message">Message <span class="text-primary">*</span></label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your messsage. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12 text-center">
+                    <button class="btn btn-more text-uppercase mb-2" type="submit"><span class="btn-label">Send message</span></button>
+                    <p class="text-muted"><strong class="text-primary">*</strong> These fields are required.
+                    </p>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </form>
+              <!-- END CONTACT FORM -->
+            </div>
+            <!-- /.col-md-12 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.section-->
+
+
+  @@include('footer.html')
+
+  @@include('footer-scripts.html')
+
+</body>
+
+</html>

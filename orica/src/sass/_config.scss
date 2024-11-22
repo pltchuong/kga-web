@@ -1,0 +1,15 @@
+//
+// Configuration
+//
+
+// Bootstrap functions
+@import "bootstrap5/functions";
+
+// Theme variables 
+// ** Override Bootstrap settings here
+@import "variables";
+
+// Bootstrap variables and mixins
+@import "bootstrap5/variables";
+@import "bootstrap5/mixins";
+@import "bootstrap5/utilities";

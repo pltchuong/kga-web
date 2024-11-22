@@ -1,0 +1,529 @@
+//
+// Buttons
+//
+.btn {
+    letter-spacing: 0.04em;
+
+    &.btn-light {
+        color: $black !important;
+        border-color: $light !important;
+
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            color: $black !important;
+            background-color: darken($light, 8%) !important;
+            border-color: darken($light, 8%) !important;
+        }
+    }
+
+    &.btn-outline-light {
+        border-color: $gray-200 !important;
+        color: $gray-200 !important;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            color: $black !important;
+            background-color: $light !important;
+        }
+    }
+
+    &.btn-sm.btn-pills {
+        border-radius: $btn-pills-border-radius-sm;
+    }
+
+    &.btn-pills {
+        border-radius: $btn-pills-border-radius;
+    }
+
+    &.btn-lg.btn-pills {
+        border-radius: $btn-pills-border-radius-lg;
+    }
+
+    &.btn-circle {
+        padding: 0;
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include font-size(1.125rem);
+        line-height: 1;
+
+        &:disabled,
+        &.disabled {
+            opacity: 0.8;
+        }
+
+        &.btn-sm {
+            width: 2rem;
+            height: 2rem;
+            @include font-size(0.875rem);
+
+            i {
+                @include font-size(0.875rem);
+            }
+        }
+
+        &.btn-lg,
+        &.btn-play {
+            width: 4.5rem;
+            height: 4.5rem;
+            @include font-size(1.5rem);
+        }
+
+        &:hover {
+            svg {
+                stroke: $white;
+            }
+        }
+
+        &.btn-play {
+            background-color: $white !important;
+            border-color: $white !important;
+            color: $primary !important;
+            i {
+                margin-left: 0.15rem;
+            }
+
+            &:hover {
+                background-color: $primary !important;
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+
+    &.btn-pulse {
+        &:hover {
+            animation: pulse-accent 2s linear infinite;
+        }
+    }
+}
+
+// Base buttons coloring
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color} {
+        background-color: #{$value} !important;
+        border-color: #{$value} !important;
+        color: $white !important;
+
+        @if $color=='secondary' {
+
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: $gray-800 !important;
+                border-color: $gray-800 !important;
+                color: $white !important;
+            }
+        }
+
+        @else {
+
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                background-color: scale-color($value, $lightness: -20%) !important;
+                border-color: scale-color($value, $lightness: -20%) !important;
+                color: $white !important;
+            }
+        }
+    }
+}
+
+// Outline buttons coloring
+@each $color,
+$value in $theme-colors {
+    .btn-outline-#{$color} {
+        border-color: #{$value};
+        color: #{$value};
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: #{$value};
+            border-color: #{$value};
+            color: $white !important;
+        }
+    }
+}
+
+// More btn
+.btn-more,
+.btn-more-2,
+.btn-more-arrow {
+    --rm-circle-size: 0.75rem;
+    --rm-circle-shift: calc(var(--rm-circle-size) + 0.5rem);
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    transition: none;
+    line-height: 1;
+    color: $secondary;
+    letter-spacing: 0.04em;
+
+    .btn-label {
+        display: inline-block;
+        position: relative;
+        padding-right: var(--rm-circle-shift);
+        transition: all .3s cubic-bezier(.37, .59, .58, .87);
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 100%;
+        }
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+
+    .btn-more-sm {
+        --rm-circle-size: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+.btn-more {
+    .btn-label {
+        padding-right: var(--rm-circle-shift);
+
+        &::before,
+        &::after {
+            width: var(--rm-circle-size);
+            height: var(--rm-circle-size);
+            background-color: $primary;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s ease-in-out;
+        }
+
+        &::before {
+            left: -1.5rem;
+            opacity: 0;
+        }
+
+        &::after {
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &.btn-more-hover-circle{
+        .btn-label {
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    &:hover {
+        .btn-label {
+            padding-left: var(--rm-circle-shift);
+            padding-right: 0;
+            transition-delay: 0.2s;
+
+            &::before {
+                opacity: 1;
+                left: 0;
+                transition-delay: 0.3s;
+            }
+
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.btn-more-2 {
+    --rm-circle-size: 0.5rem;
+    --rm-circle-shift: calc(var(--rm-circle-size) + 0.5rem);
+    font-size: 1rem;
+    .btn-label {
+        &::after {
+            width: var(--rm-circle-size);
+            height: var(--rm-circle-size);
+            background-color: $gray-200;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &:hover {
+        .btn-label {
+            &::after {
+                right: calc(-1*var(--rm-circle-size));
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+// More btn with arrow
+.btn-more-arrow {
+    padding-right: 0.5rem;
+
+    .btn-label {
+        padding: 0;
+    }
+
+    &::after {
+        content: "\f138";
+        position: relative;
+        font-family: bootstrap-icons;
+        right: 0;
+        margin-left: 0.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            right: -0.5rem;
+        }
+    }
+}
+
+// Accent btn
+.btn-accent {
+    --btn-accent-circle-size: 5rem;
+    --btn-accent-color: #{$black};
+    --btn-accent-circle-color: #{$primary};
+    --btn-accent-circle-hover-color: #{$primary-hover};
+    color: var(--btn-accent-color);
+    border: none;
+    padding: 0;
+    @include font-size(1.125rem);
+    line-height: 1;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.04em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &::before {
+        content: "";
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        border-radius: 100%;
+        width: var(--btn-accent-circle-size);
+        height: var(--btn-accent-circle-size);
+        background: $primary;
+        transition: all 0.3s ease-in-out;
+        flex-shrink: 0;
+    }
+
+    .btn-label {
+        position: relative;
+        @include font-size(1.125rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.33;
+        vertical-align: middle;
+        position: relative;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        left: calc(-1*var(--btn-accent-circle-size)/2 + var(--btn-accent-circle-size)/16);
+        z-index: 1;
+    }
+
+    svg,
+    i {
+        position: relative;
+        top: 0;
+        margin-left: 1rem;
+        display: inline-block;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        color: var(--btn-accent-color);
+
+        &::before {
+            background: var(--btn-accent-circle-hover-color);
+            animation: pulse-accent 2s linear infinite;
+        }
+
+        svg,
+        i {
+            fill: var(--btn-accent-circle-hover-color);
+            color: var(--btn-accent-circle-hover-color);
+            transform: translateX(0.5rem);
+
+        }
+    }
+
+    &:active {
+        &::before {
+            transform: scale(0.95);
+        }
+    }
+
+    &.btn-accent-border {
+        &::before {
+            width: var(--btn-accent-circle-size);
+            height: var(--btn-accent-circle-size);
+            background: transparent;
+            border: 0.125rem solid var(--btn-accent-circle-color);
+        }
+
+        &:hover {
+            color: var(--btn-accent-color);
+
+            &::before {
+                background: transparent;
+                border-color: var(--btn-accent-circle-hover-color);
+            }
+        }
+
+    }
+
+    &.btn-accent-lg {
+        @include media-breakpoint-up(md) {
+            --btn-accent-circle-size: 9.5rem;
+            @include font-size(3.25rem);
+            letter-spacing: 0;
+
+            .btn-label {
+                @include font-size(3.25rem);
+                left: calc(-1*var(--btn-accent-circle-size)/2 - 1*var(--btn-accent-circle-size)/4);
+
+                svg,
+                i {
+                    position: relative;
+                    top: 0;
+                    margin-left: 1.5rem;
+                }
+
+                svg {
+                    width: 6rem;
+                    height: 2rem;
+                }
+
+            }
+
+            &:hover {
+
+                svg,
+                i {
+                    transform: translateX(1.5rem);
+                }
+            }
+        }
+    }
+}
+
+// Navigation button
+.btn-nav-accent {
+    --accent-circle-size: 3rem;
+    color: $secondary;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &::after {
+        content: "";
+        position: relative;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        border-radius: 100%;
+        width: var(--accent-circle-size);
+        height: var(--accent-circle-size);
+        background: transparent;
+        border: 2px solid $primary;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+        z-index: -1;
+    }
+
+    .btn-label {
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1;
+        vertical-align: middle;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        right: calc(-1*var(--accent-circle-size)/2 - 6px);
+    }
+
+    &:hover {
+        color: $secondary;
+
+        &::after {
+            transition: all 0.3s ease-in-out;
+            animation: pulse-accent 2s linear infinite;
+        }
+    }
+}
+
+// Modal close
+.modal .btn-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 0;
+}
+
+@keyframes pulse-accent {
+    0% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(0.88);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
